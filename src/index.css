@@ -1,4 +1,37 @@
 :root {
+  --orange: #eb5951;
+  --orange2: rgb(253, 98, 98);
+  --orange3: #fc1234;
+  --orange4: #ff4003;
+  --orange5: #ff3d00;
+  --orange6: rgb(255 120 0);
+  --orange7: #ff6a32;
+  --orange8: #FF2A00;
+  --orange9: #F55340;
+  --orange10: #ff6161;
+  --orange11: rgb(255, 82, 14);
+  --orange12: #E85437;
+  --black: #101010;
+  --white: #fafafa;
+  --grey-60: #89898999;
+  --red: #eb5951;
+  --white-70: #fafafab3;
+  --pure-white: white;
+  --button-hover: #eb595133;
+  --grey: #1d1d1d;
+  --gray-80: #3d3d3d;
+  --gray-4: #fafafa0a;
+  --white-30: #fafafa4d;
+  --white-10: #fafafa1a;
+  --gray-40: #b4b4b4;
+  --white-18: #fafafa2e;
+  --white-80: #fffc;
+  --red-70: #eb5951b3;
+  --font-size: 1rem;
+  --grey-hover: #292929;
+}
+
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -13,28 +46,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -46,23 +57,48 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+} */
+
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
