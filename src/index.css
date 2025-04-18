@@ -1,6 +1,6 @@
 :root {
   --orange: #eb5951;
-  --orange2: rgb(253, 98, 98);
+  --orange2: #FD6262;
   --orange3: #fc1234;
   --orange4: #ff4003;
   --orange5: #ff3d00;
@@ -27,7 +27,6 @@
   --white-18: #fafafa2e;
   --white-80: #fffc;
   --red-70: #eb5951b3;
-  --font-size: 1rem;
   --grey-hover: #292929;
 }
 
