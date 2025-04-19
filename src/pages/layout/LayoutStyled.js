@@ -1,20 +1,18 @@
 import styled from "styled-components";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 export const Sitewrapper = styled.div`
-position: relative;
-background-color: ${({ theme }) => theme.mainBackground};
-color: ${({ theme }) => theme.text};
-font-family: sans-serif;
-transition: all 0.1s ease;
-min-height: 100vh;
-padding: 20px;
+  position: relative;
+  background-color: ${({ theme }) => theme.mainBackground};
+  color: ${({ theme }) => theme.text};
+  transition: all 0.1s ease;
+  min-height: 100vh;
+  padding: 20px;
 `;
 
 export const LayoutWrapper = styled.div`
   background: #FD6262;
-/* background: linear-gradient(180deg, rgba(253, 98, 98, 1) 0%, ${({ theme }) => theme.background} 50%, rgba(253, 98, 98, .7) 100%); */
-background-image: linear-gradient(to bottom, #fd6262, #ce4d6b, #9a4168, #663659, #39283e, #39283e, #39283e, #39283e, #663659, #9a4168, #ce4d6b, #fd6262);
+  background-image: linear-gradient(to bottom, #fd6262, #ce4d6b, #9a4168, #663659, #39283e, #39283e, #39283e, #39283e, #663659, #9a4168, #ce4d6b, #fd6262);
   color: ${({ theme }) => theme.text};
   transition: all 0.3s ease;
   min-height: 100vh;
@@ -50,14 +48,24 @@ export const Nav = styled.nav`
 export const NavList = styled.ul`
   display: flex;
   justify-content: end;
+  align-items: center;
   list-style: none;
-  gap: 1.5rem;
 `;
 
-export const NavLink = styled(Link)`
+export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
+  padding: 6px 20px;
   color: ${({ theme }) => theme.text};
   transition: all 0.1s ease;
+
+  &.active {
+    color: ${({ theme }) => theme.mainColor};
+  }
+
+  &:hover {
+    color: ${({ theme }) => theme.mainColor};
+    transition: all 0.1s ease;
+  }
 `;
