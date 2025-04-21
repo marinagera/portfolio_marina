@@ -1,6 +1,17 @@
+import { LayoutContainer } from '../layout/LayoutStyled';
+import { LayoutWrapperContact, ContactWrapper } from './ContactStyled';
+
 const ContactComponent = () => {
   return (
-    <>Contact</>
+    <>
+      <LayoutWrapperContact>
+        <LayoutContainer>
+          <ContactWrapper>
+            Contact
+          </ContactWrapper>
+        </LayoutContainer>
+      </LayoutWrapperContact>
+    </>
   );
 };
 

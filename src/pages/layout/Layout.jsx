@@ -16,33 +16,28 @@ const LayoutComponent = () => {
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Sitewrapper>
-        <LayoutWrapper>
-          <LayoutContainer>
-            <Header>
-              <Nav>
-                <NavList>
-                  <li>
-                    <StyledNavLink to="/">Home</StyledNavLink>
-                  </li>
-                  <li>
-                    <StyledNavLink to="projects">Projects</StyledNavLink>
-                  </li>
-                  <li>
-                    <StyledNavLink to="about">About</StyledNavLink>
-                  </li>
-                  <li>
-                    <StyledNavLink to="contact">
-                      <Buttton>Contact</Buttton>
-                      </StyledNavLink>
-                  </li>
-                </NavList>
-              </Nav>
-              <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-            </Header>
-
-            <Outlet/>
-          </LayoutContainer>
-        </LayoutWrapper>
+        <Header>
+          <Nav>
+            <NavList>
+              <li>
+                <StyledNavLink to="/">Home</StyledNavLink>
+              </li>
+              <li>
+                <StyledNavLink to="projects">Projects</StyledNavLink>
+              </li>
+              <li>
+                <StyledNavLink to="about">About</StyledNavLink>
+              </li>
+              <li>
+                <StyledNavLink to="contact">
+                  <Buttton>Contact</Buttton>
+                  </StyledNavLink>
+              </li>
+            </NavList>
+          </Nav>
+          <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+        </Header>
+        <Outlet/> 
       </Sitewrapper>
     </ThemeProvider>
   );
