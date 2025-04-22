@@ -18,6 +18,8 @@ export const ProjectsTitle = styled.h1`
   font-size: 2.5rem;
   margin: 40px 0;
   font-weight: 500;
+  text-align: left;
+  color: ${({ theme }) => theme.text};
 `;
 
 export const ProjectsDescription = styled.p`

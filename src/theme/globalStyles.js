@@ -6,9 +6,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     font-family: "Manrope", sans-serif;
-    /* font-optical-sizing: auto; */
     font-weight: 400;
-    /* font-style: normal; */
     font-size: 14px;
     transition: all 0.3s ease;
   }

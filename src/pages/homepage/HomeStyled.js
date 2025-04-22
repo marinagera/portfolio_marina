@@ -19,6 +19,8 @@ export const HomeWrapper = styled.div`
 export const NameLogo = styled.h1`
   font-size: 22px;
   font-weight: 500;
+  text-align: left;
+  color: ${({ theme }) => theme.text};
 `;
 
 export const MainText = styled.div`

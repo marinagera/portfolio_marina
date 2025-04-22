@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const ToggleWrapper = styled.div`
   align-self: center;
   margin-right: 20px;
+  z-index: 100;
 `;
 
 const SwitchLabel = styled.label`
