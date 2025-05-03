@@ -1,5 +1,6 @@
 import { HomeWrapper, NameLogo, MainText, LayoutWrapperHome, InfoList, InfoItem } from './HomeStyled';
 import { LayoutContainer } from '../layout/LayoutStyled';
+import CardsComponent from '../projects/CardsComponent';
 
 const HomePage = () => {
   return (
@@ -27,8 +28,11 @@ const HomePage = () => {
               </InfoItem>
             </InfoList>
           </HomeWrapper>
+          
         </LayoutContainer>
+        
       </LayoutWrapperHome>
+      {/* <CardsComponent /> */}
     </>
   );
 };

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { LayoutWrapper } from '../layout/LayoutStyled';
 
 export const LayoutWrapperContact = styled(LayoutWrapper)`
-  margin-top: -74px;
+  /* margin-top: -74px; */
 `;
 
 export const ContactWrapper = styled.div`

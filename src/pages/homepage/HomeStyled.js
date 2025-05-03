@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { LayoutWrapper, LayoutContainer } from '../layout/LayoutStyled';
 
 export const LayoutWrapperHome = styled(LayoutWrapper)`
-  margin-top: -74px;
+  /* margin-top: -74px; */
 `;
 
 export const HomeWrapper = styled.div`
@@ -35,7 +35,7 @@ export const MainText = styled.div`
 export const InfoList = styled.ul`
   display: flex;
   gap: 100px;
-  margin: 300px 0 64px 0;
+  margin: 230px 0 30px 0;
 `;
 
 export const InfoItem = styled.li`

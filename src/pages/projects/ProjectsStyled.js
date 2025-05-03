@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { LayoutWrapper } from '../layout/LayoutStyled';
 
 export const LayoutWrapperProjects = styled(LayoutWrapper)`
-  margin-top: -74px;
+  /* margin-top: -74px; */
 `;
 
 export const ProjectsWrapper = styled.div`
@@ -38,6 +38,11 @@ export const CardGrid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   height: min-content;
+
+  @media screen and (max-width: 992px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 `;
 
 export const ProjectCard = styled.div`
@@ -53,8 +58,21 @@ export const ProjectCard = styled.div`
   }
 `;
 
+export const MediaContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  `;
+
 export const ProjectImage = styled.img`
   width: 100%;
+  height: 420px;
+  object-fit: cover;
+`;
+
+export const ProjectVideo = styled.video`
+  width: 100%; 
   height: 420px;
   object-fit: cover;
 `;

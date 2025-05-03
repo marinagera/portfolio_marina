@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Buttton = styled.button`
+export const Button = styled.button`
   position: relative;
   background-color: transparent;
   color: ${({ theme }) => theme.text};
@@ -9,7 +9,7 @@ export const Buttton = styled.button`
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  border: 1px solid  ${({ theme }) => theme.mainColor};
+  border: 1.5px solid  ${({ theme }) => theme.mainColor};
   border-radius: 6px;
   overflow: hidden;
   transition: all 0.1s ease;

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Outlet } from "react-router";
 import { Sitewrapper, LayoutWrapper, LayoutContainer,Header, Nav, NavList, StyledNavLink } from "./LayoutStyled";
-import { Buttton } from '../../components/button/Button';
+import { Button } from '../../components/button/Button';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from '../../theme/theme';
 import GlobalStyle from '../../theme/globalStyles';
@@ -30,8 +30,8 @@ const LayoutComponent = () => {
               </li>
               <li>
                 <StyledNavLink to="contact">
-                  <Buttton>Contact</Buttton>
-                  </StyledNavLink>
+                  <Button>Contact</Button>
+                </StyledNavLink>
               </li>
             </NavList>
           </Nav>

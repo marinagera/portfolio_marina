@@ -13,31 +13,32 @@ export const Sitewrapper = styled.div`
 export const LayoutWrapper = styled.div`
   background: #FD6262;
   background:rgb(245, 235, 235);
-  /*  background-image: linear-gradient(to bottom, #fd6262, #ce4d6b, #9a4168, #663659, #39283e, #39283e, #39283e, #39283e, #663659, #9a4168, #ce4d6b, #fd6262); */
   background: ${({ theme }) =>
     theme.name === 'dark'
       ? 'linear-gradient(180deg, rgba(253, 98, 98, 1) 0%, rgba(24, 13, 13, 1) 100%)'
       : 'linear-gradient(180deg, rgba(253, 98, 98, 1) 0%, rgba(245, 235, 235, 1) 100%)'};
   color: ${({ theme }) => theme.text};
   transition: all 0.1s ease;
-  padding: .6rem .5rem;
+  padding: 1.5px 1.5px;
+  border-radius: 33px;
 `;
 
 export const LayoutContainer = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 90vh;
+  min-height: 80vh;
   background-color: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
   transition: all 0.1s ease;
   overflow-x: hidden;
-  border-radius: 2rem .25rem;
+  border-radius: 2rem;
   padding: 10px;
   margin-bottom: 40px;
 `;
 
 export const Header = styled.header`
-  width: 100%;
+  position: absolute;
+  width: 94%;
   display: flex;
   justify-content: end;
   gap: 36px;
