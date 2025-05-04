@@ -1,19 +1,15 @@
 import styled from "styled-components";
-import { LayoutWrapper, LayoutContainer } from '../layout/LayoutStyled';
-
-export const LayoutWrapperHome = styled(LayoutWrapper)`
-  /* margin-top: -74px; */
-`;
 
 export const HomeWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  min-height: 86vh;
   height: 100%;
   width: 100%;
-  /* background: linear-gradient(180deg,rgb(51, 51, 54) -48.37766594775941%, rgb(13, 13, 13) 100%); */
   overflow: hidden;
-  padding: 14px 30px;
+  padding: 20px 80px;
 `;
 
 export const NameLogo = styled.h1`
@@ -26,16 +22,20 @@ export const NameLogo = styled.h1`
 export const MainText = styled.div`
   display: flex;
   flex-direction: column;
-  flex-grow: 3;
   gap: 20px;
   font-size: 68px;
-  margin-top: 200px;
+  font-weight: 500;
+
+  span {
+    font-size: 54px;
+    color: ${({ theme }) => theme.greyText};
+  }
 `;
 
 export const InfoList = styled.ul`
   display: flex;
-  gap: 100px;
-  margin: 230px 0 30px 0;
+  gap: 200px;
+  margin-bottom: 10px;
 `;
 
 export const InfoItem = styled.li`
@@ -43,6 +43,11 @@ export const InfoItem = styled.li`
   flex-direction: column;
   gap: 4px;
   text-decoration: none;
-  font-size: 18px;
+  line-height: 1.5;
+  font-size: 20px;
   font-weight: 500;
+
+  div {
+    color: ${({ theme }) => theme.greyText};
+  }
 `;

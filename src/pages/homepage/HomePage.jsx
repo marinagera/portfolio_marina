@@ -1,29 +1,30 @@
-import { HomeWrapper, NameLogo, MainText, LayoutWrapperHome, InfoList, InfoItem } from './HomeStyled';
-import { LayoutContainer } from '../layout/LayoutStyled';
-import CardsComponent from '../projects/CardsComponent';
+import { HomeWrapper, NameLogo, MainText, InfoList, InfoItem } from './HomeStyled';
+import { LayoutContainer, LayoutWrapper } from '../layout/LayoutStyled';
 
 const HomePage = () => {
   return (
     <>
-      <LayoutWrapperHome>
+      <LayoutWrapper>
         <LayoutContainer>
           <HomeWrapper>
-            <NameLogo>Maryna Herasymenko</NameLogo>
+            <div>
+              <NameLogo>Maryna Herasymenko</NameLogo>
+            </div>
             <MainText>
-              <div>Web developer</div>
+              <div><span>Maryna Herasymenko</span></div>
               <div>Front-end developer</div>
             </MainText>
             <InfoList>
               <InfoItem>
-                <span>Based in</span>
+                <div>Based in</div>
                 <span>Zurich, Switzerland</span>
               </InfoItem>
               <InfoItem>
-                <span>Contact</span>
-                <span>marynaherasymenko@gmail.com</span>
+                <div>Contact</div>
+                <span>maryna.herasymenko@powercoders.org</span>
               </InfoItem>
               <InfoItem>
-                <span>Current location:</span>
+                <div>Current location:</div>
                 <span>47.3769° N, 8.5417° E</span>
               </InfoItem>
             </InfoList>
@@ -31,8 +32,7 @@ const HomePage = () => {
           
         </LayoutContainer>
         
-      </LayoutWrapperHome>
-      {/* <CardsComponent /> */}
+      </LayoutWrapper>
     </>
   );
 };

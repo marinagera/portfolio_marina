@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Outlet } from "react-router";
-import { Sitewrapper, LayoutWrapper, LayoutContainer,Header, Nav, NavList, StyledNavLink } from "./LayoutStyled";
+import { Sitewrapper, Header, Nav, NavList, StyledNavLink } from "./LayoutStyled";
 import { Button } from '../../components/button/Button';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from '../../theme/theme';
@@ -23,14 +23,11 @@ const LayoutComponent = () => {
                 <StyledNavLink to="/">Home</StyledNavLink>
               </li>
               <li>
-                <StyledNavLink to="projects">Projects</StyledNavLink>
-              </li>
-              <li>
                 <StyledNavLink to="about">About</StyledNavLink>
               </li>
               <li>
-                <StyledNavLink to="contact">
-                  <Button>Contact</Button>
+                <StyledNavLink to="projects">
+                  <Button>Projects</Button>
                 </StyledNavLink>
               </li>
             </NavList>

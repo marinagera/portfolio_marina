@@ -1,9 +1,4 @@
 import styled from "styled-components";
-import { LayoutWrapper } from '../layout/LayoutStyled';
-
-export const LayoutWrapperProjects = styled(LayoutWrapper)`
-  /* margin-top: -74px; */
-`;
 
 export const ProjectsWrapper = styled.div`
   display: flex;
@@ -11,7 +6,7 @@ export const ProjectsWrapper = styled.div`
   height: 100%;
   width: 100%;
   overflow: hidden;
-  padding: 60px;
+  padding: 60px 80px;
 `;
 
 export const ProjectsTitle = styled.h1`
@@ -30,7 +25,7 @@ export const ProjectsDescription = styled.p`
 `;
 
 export const CardsWrapper = styled.div`
-  padding: 60px 0;
+  padding-top: 60px;
 `;
 
 export const CardGrid = styled.div`
@@ -109,4 +104,8 @@ export const ProjectLink = styled.a`
   &:hover {
     background: linear-gradient(222deg,  #fd6262, #833AB4);
   }
+`;
+
+export const ContactSectionWrapper = styled.div`
+  padding: 0 80px;
 `;

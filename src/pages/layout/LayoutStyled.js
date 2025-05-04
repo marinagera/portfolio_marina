@@ -33,7 +33,7 @@ export const LayoutContainer = styled.div`
   overflow-x: hidden;
   border-radius: 2rem;
   padding: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 `;
 
 export const Header = styled.header`

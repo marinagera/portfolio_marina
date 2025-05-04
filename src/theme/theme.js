@@ -8,6 +8,7 @@ export const darkTheme = {
   body: '#121212',
   text: '#fafafa',
   greyText: '#fafafab3',
+  greyColor: "#404040",
   greyBackground: '#1d1d1d',
   buttonBg: '#0d6efd',
 };
@@ -22,6 +23,7 @@ export const lightTheme = {
   body: '#ffffff',
   text: '#121212',
   greyText: '#888883',
+  greyColor: '#cccccc',
   greyBackground: '#f6f6f8',
   buttonBg: '#007bff',
 };

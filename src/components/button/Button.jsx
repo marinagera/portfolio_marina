@@ -4,7 +4,7 @@ export const Button = styled.button`
   position: relative;
   background-color: transparent;
   color: ${({ theme }) => theme.text};
-  padding: 6px 18px;
+  padding: 0.75rem 2rem;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
