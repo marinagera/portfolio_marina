@@ -1,9 +1,4 @@
 import styled from "styled-components";
-import { LayoutWrapper } from '../layout/LayoutStyled';
-
-export const LayoutWrapperAbout = styled(LayoutWrapper)`
-  /* margin-top: -74px; */
-`;
 
 export const AboutWrapper = styled.div`
   display: flex;
@@ -11,29 +6,42 @@ export const AboutWrapper = styled.div`
   height: 100%;
   width: 100%;
   overflow: hidden;
-  padding: 14px 30px;
+  padding: 0 80px;
+
+  @media screen and (max-width: 992px) {
+    padding: 0 40px;
+  }
 `;
 
 export const AboutContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 150px;
 `;
 
 export const AboutContent = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 20px 80px;
 `;
 
 export const AboutTitle = styled.h1`
   font-size: 2.5rem; 
   font-weight: 700;
   color: ${({ theme }) => theme.text};
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 440px) {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
 `;
 
 export const AboutDescription = styled.p`
@@ -41,6 +49,16 @@ export const AboutDescription = styled.p`
   color: ${({ theme }) => theme.text};
   margin-bottom: 30px;
   text-align: center;
+
+  span {
+    color: ${({ theme }) => theme.mainColor};
+  };
+
+  @media screen and (max-width: 440px) {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
 `;
 
 export const ResumeContainer = styled.div`
@@ -48,13 +66,18 @@ export const ResumeContainer = styled.div`
   display: flex; 
   justify-content: space-between;
   align-items: center;
-  margin: 20px 40px;
+  margin: 20px 0;
   padding: 30px 40px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: ${({ theme }) => theme.greyBackground};
   color: ${({ theme }) => theme.text};
   transition: all 0.1s ease;
+
+  @media screen and (max-width: 440px) {
+    flex-direction: column;
+    padding: 14px;
+  }
 `;
 
 export const ResumeContent = styled.p`
@@ -63,59 +86,132 @@ export const ResumeContent = styled.p`
   color: ${({ theme }) => theme.text};
   line-height: 1.4;
   text-align: center;
-`;
 
-export const AboutIntro = styled.div`
-  display: flex;
-  margin: 60px 40px;
-  gap: 100px;
-`;
-
-export const IntroDescription = styled.p`
-  width: 33%;
-  font-size: 1.1rem; 
-  color: ${({ theme }) => theme.text};
-  line-height: 1.4;
-  margin-bottom: 20px;
+  @media screen and (max-width: 440px) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const AboutSection = styled.div`
   display: flex;
-  margin: 20px 40px;
-  gap: 100px;
+  gap: 60px;
+  margin-top: 60px;
+  padding: 0 40px;
+
+  @media screen and (max-width: 992px) {
+    padding: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const AboutSectionContent = styled.div`
-  width: 40%;
-  font-size: 1.3rem; 
+  order: 1;
+  width: 50%;
+  font-size: 1.1rem; 
   color: ${({ theme }) => theme.text};
   line-height: 1.4;
   margin-bottom: 20px;
-`;
-
-export const AboutValues = styled.div`
-  font-size: 1rem; 
-  color: ${({ theme }) => theme.text};
-  line-height: 1.4;
-  margin: 40px 0; 
-  padding: 40px 30px;
-  border-radius: 12px;
-  border: 1px solid ${({ theme }) => theme.text};
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
   h3 {
+    margin-bottom: 14px;
     font-size: 1.2rem; 
-    font-weight: 700;
-    color: ${({ theme }) => theme.text};
-    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 8px;
+    line-height: 1.8;
+    text-align: justify;
+
+    span {
+      color: ${({ theme }) => theme.mainColor};
+
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 1rem;
+      line-height: 1.3;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    order: 2;
+  }
+`;
+
+export const AboutImage = styled.div`
+  order: 2;
+  width: 50%;
+  text-align: center;
+
+  @media screen and (max-width: 992px) {
+    width: 30%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    order: 1;
+  }
+`;
+
+export const Image = styled.img`
+  width: auto;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 992px) {
+    height: 350px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
+`;
+
+export const AboutArticleContainer = styled.div`
+  display: flex;
+  gap: 60px;
+  margin: 0;
+
+  >:nth-child(2) {
+    margin-top: 120px;
+
+    @media screen and (max-width: 1400px) {
+      margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    margin-top: 50px;
+    flex-direction: column;
   }
 `;
 
 export const AboutArticle = styled.div`
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin: 20px 40px;
+  margin: 20px 0;
+
+  p {
+    font-size: 1.1rem;
+    color: ${({ theme }) => theme.text};
+    line-height: 1.4;
+  }
+
+  @media screen and (max-width: 1400px) {
+    width: 100%;
+  }
 `;
 
 export const ArticleTitle = styled.h2`
@@ -123,11 +219,19 @@ export const ArticleTitle = styled.h2`
   font-weight: 700;
   color: ${({ theme }) => theme.text};
   margin-bottom: 20px;
-  text-align: start;
+  
+`;
+
+export const ArticleSubtitle = styled.h3`
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: ${({ theme }) => theme.greyText};
+  margin-bottom: 20px;
 `;
 
 export const ArticleContent = styled.div`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  height: 200px;
   color: ${({ theme }) => theme.text};
   margin-bottom: 20px;
   padding: 30px 40px;
@@ -135,16 +239,86 @@ export const ArticleContent = styled.div`
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: ${({ theme }) => theme.greyBackground};
+
+  p {
+    margin-bottom: 8px;
+  }
+
+  a {
+    color: ${({ theme }) => theme.text};
+    text-decoration: none;
+    transition: all 0.1s ease;
+  }
+
+  a:hover {
+    color: ${({ theme }) => theme.mainColor}
+  }
 `;
 
-export const AboutImage = styled.div`
-  width: 50%;
-  text-align: center;
+export const ContactSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 60px 40px;
+  border-top: 3px solid rgba(245, 235, 235, 1);
+  margin: 40px 0;
+
+  ${({ theme }) =>
+    theme.name === 'dark' &&
+    `
+      border-top: 2px solid ${theme.greyColor};
+    `}
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: ${({ theme }) => theme.text};
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: ${({ theme }) => theme.text};
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    display: flex;
+    gap: 200px;
+    list-style: none;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  li {
+    font-size: 1.1rem;
+    color: ${({ theme }) => theme.text};
+    line-height: 1.4;
+    margin-bottom: 20px;
+
+    span {
+      display: inline-block;
+      font-weight: 500;
+      color: ${({ theme }) => theme.mainColor};
+      margin-left: 8px;
+    }
+  }
+
+  a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: ${({ theme }) => theme.mainColor};
+    text-decoration: none;
+    transition: all 0.1s ease;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 60px 0;
+  }
 `;
 
-export const Image = styled.img`
-  width: 60%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-`;
