@@ -25,7 +25,7 @@ const AboutComponent = () => {
               <AboutContent>
 
                 <AboutTitle>Hi, I'm Maryna Herasymenko</AboutTitle>
-                <AboutDescription>Frontend Developer | React Enthusiast | Lifelong Learner</AboutDescription>
+                <AboutDescription>Frontend Developer <span>|</span> React Enthusiast <span>|</span> Lifelong Learner</AboutDescription>
 
                 <ResumeContainer>
                   <ResumeContent>Resume</ResumeContent>
@@ -69,7 +69,7 @@ const AboutComponent = () => {
                     </ArticleContent>
                     <ArticleContent>
                       <ArticleSubtitle>Tools</ArticleSubtitle>
-                        <p>Git, GitHub, Vite </p>
+                        <p>Git, GitHub, Gitlab, Vite, CRA, Figma </p>
                     </ArticleContent>
                   </AboutArticle>
 
@@ -112,7 +112,7 @@ const AboutComponent = () => {
                 Feel free to reach out if you'd like to collaborate or learn more about my work.
               </p>
               <ul>
-                <li>Email: <span>marynaherasymenko@gmail.com</span></li>
+                <li>Email: <span>maryna.herasymenko@powercoders.org</span></li>
                 <li> 
                   <a href="https://www.linkedin.com/in/maryna-herasymenko-7762a99a/" target='_blank' rel="noopener noreferrer" title="LinkedIn Profile">
                   Linkedin

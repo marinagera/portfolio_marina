@@ -27,11 +27,14 @@ const HomePage = () => {
                 <div>Current location:</div>
                 <span>47.3769° N, 8.5417° E</span>
               </InfoItem>
+              <InfoItem>
+                <div>
+                  <a href="../projects" >Projects -&gt;</a>
+                </div>
+              </InfoItem>
             </InfoList>
           </HomeWrapper>
-          
         </LayoutContainer>
-        
       </LayoutWrapper>
     </>
   );

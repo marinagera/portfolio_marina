@@ -19,4 +19,12 @@ export const Button = styled.button`
     background: var(--button-hover);
     transition: all 0.1s ease;
   }
+
+  @media screen and (max-width: 640px) {
+    padding: 0.5rem 1.5rem;
+  }
+
+  @media screen and (max-width: 440px) {
+    padding: 0.5rem 1rem;
+  }
 `;

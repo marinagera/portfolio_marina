@@ -3,7 +3,7 @@ import {
   CardsWrapper, CardGrid,
   ProjectCard, MediaContainer,
   ProjectImage, ProjectVideo,
-  ProjectTitle, ProjectLink
+  ProjectTitle,CardLink
 } from './ProjectsStyled';
 
 import ShopImage from '../../assets/images/Shop.png';
@@ -14,11 +14,12 @@ import Recipes from '../../assets/images/Recipes.png';
 const projectData = [
   {
     id: 1,
-    title: 'Clielo Apparel Shop',
+    title: 'Sport Shop',
     description: 'A clothing store website built with HTML and CSS.',
     image: ShopImage,
     technologies: 'HTML, CSS',
-    link: 'https://marinagera.github.io/project_shop/index.html',
+    whatWasLearned: 'HTML, CSS, Flexbox, Grid',
+    link: 'https://marinagera.github.io/sport_shop/index.html',
   },
   {
     id: 2,
@@ -53,22 +54,21 @@ const CardsComponent = () => {
         <CardGrid>
           {projectData.map((project) => (
             <ProjectCard key={project.id}>
-              <MediaContainer>
-                {project.video ? (
-                  <ProjectVideo autoPlay loop muted>
-                    <source src={project.video} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </ProjectVideo>
-                ) : (
-                  <ProjectImage src={project.image} alt={project.title} />
-                )}
-              </MediaContainer>
-              <ProjectTitle>{project.title}</ProjectTitle>
-              <ProjectDescription >{project.description}</ProjectDescription >
-              <ProjectTechnologies>Technologies: {project.technologies}</ProjectTechnologies>
-              <ProjectLink href={project.link} target="_blank" rel="noopener noreferrer">
-                View Project
-              </ProjectLink>
+              <CardLink href={project.link} target="_blank" rel="noopener noreferrer">
+                <MediaContainer>
+                  {project.video ? (
+                    <ProjectVideo autoPlay loop muted>
+                      <source src={project.video} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </ProjectVideo>
+                  ) : (
+                    <ProjectImage src={project.image} alt={project.title} />
+                  )}
+                </MediaContainer>
+                <ProjectTitle>{project.title}</ProjectTitle>
+                <ProjectDescription >{project.description}</ProjectDescription >
+                <ProjectTechnologies>Technologies: {project.technologies}</ProjectTechnologies>
+              </CardLink>
             </ProjectCard>
           ))}
         </CardGrid>
@@ -78,4 +78,3 @@ const CardsComponent = () => {
 };
 
 export default CardsComponent;
-

@@ -8,6 +8,7 @@ export const Sitewrapper = styled.div`
   transition: all 0.1s ease;
   min-height: 100vh;
   padding: 20px;
+  overflow: hidden;
 `;
 
 export const LayoutWrapper = styled.div`
@@ -38,11 +39,27 @@ export const LayoutContainer = styled.div`
 
 export const Header = styled.header`
   position: absolute;
-  width: 94%;
+  width: 100%;
   display: flex;
   justify-content: end;
   gap: 36px;
   margin-top: 10px;
+  padding: 0 130px;
+
+  @media screen and (max-width: 992px) {
+    padding: 0 80px;
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 0 60px 0 0;
+    gap: 6px;
+  }
+
+  @media screen and (max-width: 440px) {
+    justify-content: space-evenly;
+    padding: 0 48px 0 0;
+    gap: 0;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -51,6 +68,10 @@ export const Nav = styled.nav`
   align-items: center;
   padding: 1rem;
   z-index: 100;
+
+  @media screen and (max-width: 460px) {
+    padding: 1rem 0.5rem;
+  }
 `;
 
 export const NavList = styled.ul`
@@ -75,5 +96,13 @@ export const StyledNavLink = styled(NavLink)`
   &:hover {
     color: ${({ theme }) => theme.mainColor};
     transition: all 0.1s ease;
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 3px 14px;
+  }
+
+  @media screen and (max-width: 440px){
+    padding: 3px 8px;
   }
 `;

@@ -7,13 +7,17 @@ export const AboutWrapper = styled.div`
   width: 100%;
   overflow: hidden;
   padding: 0 80px;
+
+  @media screen and (max-width: 992px) {
+    padding: 0 40px;
+  }
 `;
 
 export const AboutContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 110px;
+  margin-top: 150px;
 `;
 
 export const AboutContent = styled.div`
@@ -26,8 +30,18 @@ export const AboutTitle = styled.h1`
   font-size: 2.5rem; 
   font-weight: 700;
   color: ${({ theme }) => theme.text};
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 440px) {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
 `;
 
 export const AboutDescription = styled.p`
@@ -35,6 +49,16 @@ export const AboutDescription = styled.p`
   color: ${({ theme }) => theme.text};
   margin-bottom: 30px;
   text-align: center;
+
+  span {
+    color: ${({ theme }) => theme.mainColor};
+  };
+
+  @media screen and (max-width: 440px) {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
 `;
 
 export const ResumeContainer = styled.div`
@@ -49,6 +73,11 @@ export const ResumeContainer = styled.div`
   background-color: ${({ theme }) => theme.greyBackground};
   color: ${({ theme }) => theme.text};
   transition: all 0.1s ease;
+
+  @media screen and (max-width: 440px) {
+    flex-direction: column;
+    padding: 14px;
+  }
 `;
 
 export const ResumeContent = styled.p`
@@ -57,6 +86,10 @@ export const ResumeContent = styled.p`
   color: ${({ theme }) => theme.text};
   line-height: 1.4;
   text-align: center;
+
+  @media screen and (max-width: 440px) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const AboutSection = styled.div`
@@ -64,9 +97,18 @@ export const AboutSection = styled.div`
   gap: 60px;
   margin-top: 60px;
   padding: 0 40px;
+
+  @media screen and (max-width: 992px) {
+    padding: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const AboutSectionContent = styled.div`
+  order: 1;
   width: 50%;
   font-size: 1.1rem; 
   color: ${({ theme }) => theme.text};
@@ -87,12 +129,36 @@ export const AboutSectionContent = styled.div`
       color: ${({ theme }) => theme.mainColor};
 
     }
+
+    @media screen and (max-width: 600px) {
+      font-size: 1rem;
+      line-height: 1.3;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    order: 2;
   }
 `;
 
 export const AboutImage = styled.div`
+  order: 2;
   width: 50%;
   text-align: center;
+
+  @media screen and (max-width: 992px) {
+    width: 30%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    order: 1;
+  }
 `;
 
 export const Image = styled.img`
@@ -100,6 +166,15 @@ export const Image = styled.img`
   height: 500px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 992px) {
+    height: 350px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const AboutArticleContainer = styled.div`
@@ -109,6 +184,15 @@ export const AboutArticleContainer = styled.div`
 
   >:nth-child(2) {
     margin-top: 120px;
+
+    @media screen and (max-width: 1400px) {
+      margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    margin-top: 50px;
+    flex-direction: column;
   }
 `;
 
@@ -123,6 +207,10 @@ export const AboutArticle = styled.div`
     font-size: 1.1rem;
     color: ${({ theme }) => theme.text};
     line-height: 1.4;
+  }
+
+  @media screen and (max-width: 1400px) {
+    width: 100%;
   }
 `;
 
@@ -200,6 +288,11 @@ export const ContactSection = styled.div`
     gap: 200px;
     list-style: none;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   li {
@@ -223,4 +316,9 @@ export const ContactSection = styled.div`
     text-decoration: none;
     transition: all 0.1s ease;
   }
+
+  @media screen and (max-width: 992px) {
+    padding: 60px 0;
+  }
 `;
+

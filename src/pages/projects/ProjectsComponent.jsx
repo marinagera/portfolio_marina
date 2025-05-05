@@ -12,7 +12,7 @@ const ProjectsComponent = () => {
       <LayoutWrapper>
         <LayoutContainer>
           <ProjectsWrapper>
-          <ProjectsTitle>My Projects</ProjectsTitle>
+          <ProjectsTitle>Projects</ProjectsTitle>
           <ProjectsDescription>Featured projects showcasing digital experiences I've crafted with attention to detail and user-centric design.</ProjectsDescription>
             <CardsComponent />
           </ProjectsWrapper>
@@ -24,7 +24,7 @@ const ProjectsComponent = () => {
                 Feel free to reach out if you'd like to collaborate or learn more about my work.
               </p>
               <ul>
-                <li>Email: <span>marynaherasymenko@gmail.com</span></li>
+                <li>Email: <span>maryna.herasymenko@powercoders.org</span></li>
                 <li> 
                   <a href="https://www.linkedin.com/in/maryna-herasymenko-7762a99a/" target='_blank' rel="noopener noreferrer" title="LinkedIn Profile">
                   Linkedin
