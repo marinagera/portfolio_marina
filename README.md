@@ -5,7 +5,7 @@ This is a responsive React-based web app built with **Vite**, **styled-component
 
 ## ✨ Live Demo
 
-🔗 [Visit Portfolio](https://yourusername.github.io/your-repo-name)
+🔗 [Visit Portfolio](https://marinagera.github.io/portfolio_marina/)
 
 ---
 
