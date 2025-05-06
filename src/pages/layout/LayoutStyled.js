@@ -98,6 +98,10 @@ export const StyledNavLink = styled(NavLink)`
     transition: all 0.1s ease;
   }
 
+  &.active button {
+    background-color: var(--button-hover);
+  }
+
   @media screen and (max-width: 640px) {
     padding: 3px 14px;
   }

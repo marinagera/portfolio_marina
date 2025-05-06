@@ -11,6 +11,10 @@ export const AboutWrapper = styled.div`
   @media screen and (max-width: 992px) {
     padding: 0 40px;
   }
+
+  @media screen and (max-width: 600px) {
+    padding: 0 20px;
+  }
 `;
 
 export const AboutContainer = styled.div`
@@ -40,6 +44,7 @@ export const AboutTitle = styled.h1`
 
   @media screen and (max-width: 440px) {
     font-size: 1.5rem;
+    line-height: 1.5;
     margin-bottom: 24px;
   }
 `;
@@ -96,7 +101,6 @@ export const AboutSection = styled.div`
   display: flex;
   gap: 60px;
   margin-top: 60px;
-  padding: 0 40px;
 
   @media screen and (max-width: 992px) {
     padding: 0;
@@ -109,7 +113,7 @@ export const AboutSection = styled.div`
 
 export const AboutSectionContent = styled.div`
   order: 1;
-  width: 50%;
+  width: 70%;
   font-size: 1.1rem; 
   color: ${({ theme }) => theme.text};
   line-height: 1.4;
@@ -127,12 +131,11 @@ export const AboutSectionContent = styled.div`
 
     span {
       color: ${({ theme }) => theme.mainColor};
-
     }
 
     @media screen and (max-width: 600px) {
       font-size: 1rem;
-      line-height: 1.3;
+      line-height: 2;
     }
   }
 
@@ -148,8 +151,8 @@ export const AboutSectionContent = styled.div`
 
 export const AboutImage = styled.div`
   order: 2;
-  width: 50%;
-  text-align: center;
+  width: 30%;
+  text-align: end;
 
   @media screen and (max-width: 992px) {
     width: 30%;
@@ -157,13 +160,14 @@ export const AboutImage = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100%;
+    text-align: center;
     order: 1;
   }
 `;
 
 export const Image = styled.img`
   width: auto;
-  height: 500px;
+  height: 400px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
@@ -172,8 +176,12 @@ export const Image = styled.img`
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%;
-    height: auto;
+    width: auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: auto;
+    max-height: 300px;
   }
 `;
 
@@ -193,6 +201,10 @@ export const AboutArticleContainer = styled.div`
   @media screen and (max-width: 1400px) {
     margin-top: 50px;
     flex-direction: column;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 22px;
   }
 `;
 
@@ -253,6 +265,14 @@ export const ArticleContent = styled.div`
   a:hover {
     color: ${({ theme }) => theme.mainColor}
   }
+
+  @media screen and (max-width: 768px) {
+    height: fit-content;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 22px;
+  }
 `;
 
 export const ContactSection = styled.div`
@@ -281,6 +301,10 @@ export const ContactSection = styled.div`
     color: ${({ theme }) => theme.text};
     line-height: 1.4;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 16px;
+    }
   }
 
   ul {
@@ -292,6 +316,7 @@ export const ContactSection = styled.div`
     @media screen and (max-width: 768px) {
       flex-direction: column;
       gap: 20px;
+      margin-top: 22px;
     }
   }
 
@@ -306,6 +331,12 @@ export const ContactSection = styled.div`
       font-weight: 500;
       color: ${({ theme }) => theme.mainColor};
       margin-left: 8px;
+
+      @media screen and (max-width: 600px) {
+        font-size: 16px;
+        margin-left: 0;
+        margin-top: 12px;
+      }
     }
   }
 
@@ -315,6 +346,10 @@ export const ContactSection = styled.div`
     color: ${({ theme }) => theme.mainColor};
     text-decoration: none;
     transition: all 0.1s ease;
+
+    @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
   }
 
   @media screen and (max-width: 992px) {

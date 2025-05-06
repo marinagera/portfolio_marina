@@ -7,6 +7,14 @@ export const ProjectsWrapper = styled.div`
   width: 100%;
   overflow: hidden;
   padding: 60px 80px;
+
+  @media screen and (max-width: 992px) {
+    padding: 60px 40px;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 60px 20px;
+  }
 `;
 
 export const ProjectsTitle = styled.h1`
@@ -58,26 +66,24 @@ export const ProjectCard = styled.div`
 export const MediaContainer = styled.div`
   position: relative;
   width: 100%;
-  height: 420px;
-  overflow: hidden;
 
   img {
     width: 100%;
     height: 420px;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
+
+    @media screen and (max-width: 600px) {
+      width: auto;
+      height: 100%;
+      max-height: 250px;
+      object-fit: contain;
+    }
   }
 
   &:hover img {
-    transform: scale(1.03);
+    transform: scale(1.05);
   }
-`;
-
-export const ProjectImage = styled.img`
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
 `;
 
 export const ProjectVideo = styled.video`
@@ -90,6 +96,11 @@ export const ProjectTitle = styled.h2`
   font-size: 1.6rem;
   font-weight: 700;
   margin: 16px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
 `;
 
 export const ProjectDescription = styled.p`
@@ -98,6 +109,10 @@ export const ProjectDescription = styled.p`
   margin: 16px;
   line-height: 1.3;
   color: ${({ theme }) => theme.greyText};
+
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
 `;
 
 export const ProjectTechnologies = styled.div`
@@ -123,6 +138,14 @@ export const ProjectLink = styled.a`
 
 export const ContactSectionWrapper = styled.div`
   padding: 0 80px;
+
+  @media screen and (max-width: 992px) {
+    padding: 0 40px;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 0 20px;
+  }
 `;
 
 export const CardLink = styled.a`
