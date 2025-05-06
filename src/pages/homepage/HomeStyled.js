@@ -77,7 +77,7 @@ export const MainText = styled.div`
 
   @media screen and (max-width: 480px) {
     font-size: 36px;
-    
+    line-height: 1.5; 
   }
 `;
 
@@ -112,6 +112,10 @@ export const InfoItem = styled.li`
   span {
     font-size: 18px;
     font-weight: 400;
+
+    @media screen and (max-width: 440px) {
+      font-size: 16px;
+  }
   }
 
   a {

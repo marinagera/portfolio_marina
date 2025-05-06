@@ -2,7 +2,7 @@ import {
   ProjectDescription, ProjectTechnologies,
   CardsWrapper, CardGrid,
   ProjectCard, MediaContainer,
-  ProjectImage, ProjectVideo,
+  ProjectVideo,
   ProjectTitle,CardLink
 } from './ProjectsStyled';
 
@@ -62,7 +62,7 @@ const CardsComponent = () => {
                       Your browser does not support the video tag.
                     </ProjectVideo>
                   ) : (
-                    <ProjectImage src={project.image} alt={project.title} />
+                    <img src={project.image} alt={project.title} />
                   )}
                 </MediaContainer>
                 <ProjectTitle>{project.title}</ProjectTitle>

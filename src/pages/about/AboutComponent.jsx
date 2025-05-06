@@ -40,12 +40,12 @@ const AboutComponent = () => {
                 <AboutSection>
                   <AboutSectionContent>
                     <h3>A closer look at my profile</h3>
-                    <p>
+                    {/* <p>
                       My journey in tech started with a curiosity for how things work, and it has evolved into a love for creating solutions that make life easier.
-                    </p>
+                    </p> */}
                     
                     <p>
-                      I'm an aspiring Frontend Developer with one year of hands-on experience as a trainee, working with <span>React</span>, API integration, and full-cycle application development from design to testing. With strong foundation in <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> and <span>TypeScript</span>, and modern frontend technologies, supported by specialized training in frontend development, <span>IT support</span>, and software <span>testing</span>. Passionate about continuous learning and creative problem-solving, I am currently based in Zurich and ready for new challenges.
+                      I'm an aspiring Frontend Developer with one year of hands-on experience as a trainee, working with <span>React</span>, API integration, and full-cycle application development from design to testing. With strong foundation in <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> and <span>TypeScript</span>, and modern frontend technologies, supported by specialized training in frontend development, <span>IT support</span>, and software <span>testing</span>.
                       My goal is to deliver high-quality code and exceptional user experiences. I'm always eager to learn new technologies and improve my skills.
                     </p>
                   </AboutSectionContent>
