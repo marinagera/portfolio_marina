@@ -1,5 +1,6 @@
 import { HomeWrapper, NameLogo, MainText, InfoList, InfoItem } from './HomeStyled';
 import { LayoutContainer, LayoutWrapper } from '../layout/LayoutStyled';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
@@ -29,7 +30,7 @@ const HomePage = () => {
               </InfoItem>
               <InfoItem>
                 <div>
-                  <a href="../projects" >Projects -&gt;</a>
+                <Link to="/projects">Projects -&gt;</Link>
                 </div>
               </InfoItem>
             </InfoList>
