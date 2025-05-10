@@ -4,7 +4,7 @@ import {
   ProjectsDescription, ProjectsWrapper, ContactSectionWrapper
 } from './ProjectsStyled';
 import CardsComponent from './CardsComponent';
-import { ContactSection } from '../about/AboutStyled';
+import  ContactComponent  from '../contact/ContactComponent';
 
 const ProjectsComponent = () => {
   return (
@@ -17,25 +17,7 @@ const ProjectsComponent = () => {
             <CardsComponent />
           </ProjectsWrapper>
           <ContactSectionWrapper>
-            <ContactSection>
-              <h3>Let's connect</h3>
-              <p>
-                I'm currently open to frontend-development positions.  
-                Feel free to reach out if you'd like to collaborate or learn more about my work.
-              </p>
-              <ul>
-                <li>Email: 
-                  <a href="mailto:maryna.herasymenko@powercoders.org">
-                    <span>maryna.herasymenko@powercoders.org</span>
-                  </a>
-                </li>
-                <li> 
-                  <a href="https://www.linkedin.com/in/maryna-herasymenko-7762a99a/" target='_blank' rel="noopener noreferrer" title="LinkedIn Profile">
-                  Linkedin
-                  </a>
-                </li>
-              </ul>
-            </ContactSection>
+            <ContactComponent />
           </ContactSectionWrapper>
         </LayoutContainer>
       </LayoutWrapper>

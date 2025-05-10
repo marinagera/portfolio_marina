@@ -8,14 +8,13 @@ import {
   AboutArticle, ArticleTitle,
   ArticleContent, ArticleSubtitle,
   AboutArticleContainer,
-  Image, ContactSection,
+  Image,
   AboutTextWithLinks, ExternalLinkStyled,
-  ContactSectionLink, GithubIconsStyled,
-  LinkedinIconsStyled, EmailIconsStyled
 } from './AboutStyled';
 import { LayoutContainer, LayoutWrapper } from '../layout/LayoutStyled';
 import MarynaPhoto from '../../assets/images/maryna_photo.jpg';
 import { Button } from '../../components/button/Button';
+import  ContactComponent  from '../contact/ContactComponent';
 
 
 const AboutComponent = () => {
@@ -110,33 +109,7 @@ const AboutComponent = () => {
               </AboutContent>
             </AboutContainer>
 
-            <ContactSection>
-              <h3>Let's connect</h3>
-              <p>
-                I'm currently open to frontend-development positions.  
-                Feel free to reach out if you'd like to collaborate or learn more about my work.
-              </p>
-              <ul>
-                <ContactSectionLink>
-                  <a href="mailto:maryna.herasymenko@powercoders.org">
-                    <EmailIconsStyled />
-                    <span>maryna.herasymenko@powercoders.org</span>
-                  </a>
-                </ContactSectionLink>
-                <ContactSectionLink> 
-                  <a href="https://www.linkedin.com/in/maryna-herasymenko-7762a99a/" target='_blank' rel="noopener noreferrer" title="LinkedIn Profile">
-                    <LinkedinIconsStyled />
-                    Linkedin
-                  </a>
-                </ContactSectionLink>
-                <ContactSectionLink> 
-                  <a href="https://github.com/marinagera" target='_blank' rel="noopener noreferrer" title="Github Profile">
-                    <GithubIconsStyled />
-                    Github
-                  </a>
-                </ContactSectionLink>
-              </ul>
-            </ContactSection>
+            <ContactComponent />
           </AboutWrapper>
         </LayoutContainer>
       </LayoutWrapper>
