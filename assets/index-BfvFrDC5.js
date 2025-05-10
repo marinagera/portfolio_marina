@@ -606,7 +606,7 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   @media screen and (max-width: 600px) {
     margin: 14px 6px 0 0;
   }
-`,O0=()=>z.jsxs(Mx,{children:[z.jsx("h3",{children:"Let's connect"}),z.jsx("p",{children:"I'm currently open to frontend-development positions. Feel free to reach out if you'd like to collaborate or learn more about my work."}),z.jsxs("ul",{children:[z.jsx(Cf,{children:z.jsxs("a",{href:"mailto:maryna.herasymenko@powercoders.org",children:[z.jsx(wx,{}),z.jsx("span",{children:"maryna.herasymenko@powercoders.org"})]})}),z.jsx(Cf,{children:z.jsxs("a",{href:"https://www.linkedin.com/in/maryna-herasymenko-7762a99a/",target:"_blank",rel:"noopener noreferrer",title:"LinkedIn Profile",children:[z.jsx(Cx,{}),"Linkedin"]})}),z.jsx(Cf,{children:z.jsxs("a",{href:"https://github.com/marinagera",target:"_blank",rel:"noopener noreferrer",title:"Github Profile",children:[z.jsx(Dx,{}),"Github"]})})]})]}),jx=()=>z.jsx(z.Fragment,{children:z.jsx(eo,{children:z.jsxs(lo,{children:[z.jsxs(ox,{children:[z.jsx(sx,{children:"Projects"}),z.jsx(dx,{children:"Featured projects showcasing digital experiences I've crafted with attention to detail and user-centric design."}),z.jsx(_x,{})]}),z.jsx(Sx,{children:z.jsx(O0,{})})]})})});function Nx(n){return un({attr:{fill:"none",viewBox:"0 0 24 24",strokeWidth:"2",stroke:"currentColor","aria-hidden":"true"},child:[{tag:"path",attr:{strokeLinecap:"round",strokeLinejoin:"round",d:"M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"},child:[]}]})(n)}const Ux=J.div`
+`,O0=()=>z.jsxs(Mx,{children:[z.jsx("h3",{children:"Let's connect"}),z.jsx("p",{children:"I'm currently open to web development roles. Feel free to reach out if you'd like to collaborate or learn more about my work."}),z.jsxs("ul",{children:[z.jsx(Cf,{children:z.jsxs("a",{href:"mailto:maryna.herasymenko@powercoders.org",children:[z.jsx(wx,{}),z.jsx("span",{children:"maryna.herasymenko@powercoders.org"})]})}),z.jsx(Cf,{children:z.jsxs("a",{href:"https://www.linkedin.com/in/maryna-herasymenko-7762a99a/",target:"_blank",rel:"noopener noreferrer",title:"LinkedIn Profile",children:[z.jsx(Cx,{}),"Linkedin"]})}),z.jsx(Cf,{children:z.jsxs("a",{href:"https://github.com/marinagera",target:"_blank",rel:"noopener noreferrer",title:"Github Profile",children:[z.jsx(Dx,{}),"Github"]})})]})]}),jx=()=>z.jsx(z.Fragment,{children:z.jsx(eo,{children:z.jsxs(lo,{children:[z.jsxs(ox,{children:[z.jsx(sx,{children:"Projects"}),z.jsx(dx,{children:"Featured projects showcasing digital experiences I've crafted with attention to detail and user-centric design."}),z.jsx(_x,{})]}),z.jsx(Sx,{children:z.jsx(O0,{})})]})})});function Nx(n){return un({attr:{fill:"none",viewBox:"0 0 24 24",strokeWidth:"2",stroke:"currentColor","aria-hidden":"true"},child:[{tag:"path",attr:{strokeLinecap:"round",strokeLinejoin:"round",d:"M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"},child:[]}]})(n)}const Ux=J.div`
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -655,6 +655,8 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
 
   span {
     color: ${({theme:n})=>n.mainColor};
+    display: inline-block;
+    margin: 0px 4px;
   };
 
   @media screen and (max-width: 440px) {
@@ -670,12 +672,16 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   margin: 20px 0;
   padding: 30px 40px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   background-color: ${({theme:n})=>n.greyBackground};
   color: ${({theme:n})=>n.text};
   transition: all 0.1s ease;
 
   @media screen and (max-width: 440px) {
+    padding: 20px 14px;
+  }
+
+  @media screen and (max-width: 390px) {
     flex-direction: column;
     padding: 14px;
   }
@@ -686,20 +692,22 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   line-height: 1.4;
   text-align: center;
 
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 390px) {
     margin-bottom: 20px;
   }
 `,Xx=J.div`
   display: flex;
   gap: 60px;
   margin-top: 60px;
+  padding: 0 40px;
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1200px) {
     padding: 0;
   }
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    gap: 36px;
   }
 `,Qx=J.div`
   order: 1;
@@ -753,12 +761,12 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   }
 `,Vx=J.img`
   width: auto;
-  height: 400px;
+  height: 350px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 
   @media screen and (max-width: 992px) {
-    height: 350px;
+    height: 300px;
   }
 
   @media screen and (max-width: 768px) {
@@ -767,7 +775,7 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
 
   @media screen and (max-width: 600px) {
     width: auto;
-    max-height: 300px;
+    max-height: 250px;
   }
 `,Kx=J.div`
   display: flex;
@@ -785,6 +793,7 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   @media screen and (max-width: 1400px) {
     margin-top: 50px;
     flex-direction: column;
+    gap: 10px;
   }
 
   @media screen and (max-width: 768px) {
@@ -797,11 +806,9 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   gap: 20px;
   margin: 20px 0;
 
-  p {
-    font-size: 1.1rem;
-    color: ${({theme:n})=>n.text};
-    line-height: 1.4;
-  }
+  /* p {
+    
+  } */
 
   @media screen and (max-width: 1400px) {
     width: 100%;
@@ -825,11 +832,21 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   padding: 30px 40px;
   text-align: start;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   background-color: ${({theme:n})=>n.greyBackground};
 
   p {
+    font-size: 1.1rem;
+    color: ${({theme:n})=>n.text};
+    line-height: 1.4;
     margin-bottom: 8px;
+  }
+
+  div {
+    font-size: 1rem;
+    color: ${({theme:n})=>n.greyText};
+    line-height: 1.4;
+    margin-bottom: 6px;
   }
 
   a {
@@ -953,4 +970,4 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   margin-right: 8px;
 `;J(R0)`
   margin: 3px 6px 0 0;
-`;const kx="/portfolio_marina/assets/Maryna_photo-PbuneyeY.jpg",Jx=()=>z.jsx(z.Fragment,{children:z.jsx(eo,{children:z.jsx(lo,{children:z.jsxs(Ux,{children:[z.jsx(Hx,{children:z.jsxs(Bx,{children:[z.jsx(qx,{children:"Hi, I'm Maryna Herasymenko"}),z.jsxs(Lx,{children:["Frontend Developer ",z.jsx("span",{children:"|"})," React Enthusiast ",z.jsx("span",{children:"|"})," Lifelong Learner"]}),z.jsxs(Yx,{children:[z.jsx(Gx,{children:"Resume"}),z.jsx("a",{href:"/CV_Maryna_Herasymenko.pdf",download:"CV_Maryna_Herasymenko.pdf",target:"_blank",rel:"noopener noreferrer",title:"Download CV","aria-label":"Download CV",children:z.jsx(S0,{children:"Download as PDF"})})]}),z.jsxs(Xx,{children:[z.jsxs(Qx,{children:[z.jsx("h3",{children:"A closer look at my profile"}),z.jsxs("p",{children:["I'm an aspiring Frontend Developer with one year of hands-on experience as a trainee, working with ",z.jsx("span",{children:"React"}),", API integration, and full-cycle application development from design to testing. With strong foundation in ",z.jsx("span",{children:"HTML"}),", ",z.jsx("span",{children:"CSS"}),", ",z.jsx("span",{children:"JavaScript"})," and ",z.jsx("span",{children:"TypeScript"}),", and modern frontend technologies, supported by specialized training in frontend development, ",z.jsx("span",{children:"IT support"}),", and software ",z.jsx("span",{children:"testing"}),". My goal is to deliver high-quality code and exceptional user experiences. I'm always eager to learn new technologies and improve my skills."]})]}),z.jsx(Zx,{children:z.jsx(Vx,{src:kx,alt:"Maryna Herasymenko"})})]}),z.jsxs(Kx,{children:[z.jsxs(Om,{children:[z.jsx(_m,{children:"Experience and Technologies"}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Experience"}),z.jsx("p",{children:"React Trainee @ ti&m, Zurich"}),z.jsx("p",{children:"June 2022 - July 2023"})]}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Technologies"}),z.jsx("p",{children:"JavaScript, React, TypeScript, HTML, CSS, API, WordPress"})]}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Tools"}),z.jsx("p",{children:"Git, GitHub, Gitlab, Vite, CRA, Figma "})]})]}),z.jsxs(Om,{children:[z.jsx(_m,{children:"Education and Languages"}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Education"}),z.jsx("p",{children:"Master's Degree in Food Technologies"}),z.jsx("p",{children:"National University of Food Technology (Ukraine)"}),z.jsx("p",{children:"September 2009 - June 2014"})]}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Languages"}),z.jsx("p",{children:"English, German, Russian, Ukrainian"})]}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Certifications"}),z.jsxs(Mm,{children:["IT Support Certificate - Google, Coursera",z.jsx("a",{href:"https://www.coursera.org/account/accomplishments/professional-cert/2AYQLX6CZ4ZM",target:"_blank",rel:"noopener noreferrer",children:z.jsx(Dm,{})})]}),z.jsxs(Mm,{children:["Digital marketing - Google, Coursera",z.jsx("a",{href:"https://www.coursera.org/account/accomplishments/professional-cert/VSMTYPQVPWLQ",target:"_blank",rel:"noopener noreferrer",children:z.jsx(Dm,{})})]}),z.jsx("p",{children:"Certified Tester Foundation Level - ISTQB, Zurich"})]})]})]})]})}),z.jsx(O0,{})]})})})});function $x(){return z.jsx(t1,{children:z.jsxs(ru,{path:"/",element:z.jsx(fx,{}),children:[z.jsx(ru,{index:!0,element:z.jsx(Qv,{})}),z.jsx(ru,{path:"projects",element:z.jsx(jx,{})}),z.jsx(ru,{path:"about",element:z.jsx(Jx,{})})]})})}const Cm=document.getElementById("root");Cm?ig.createRoot(Cm).render(z.jsx(N.StrictMode,{children:z.jsx(A1,{basename:"/portfolio_marina",children:z.jsx($x,{})})})):console.error("Root element not found");
+`;const kx="/portfolio_marina/assets/Maryna_photo-PbuneyeY.jpg",Jx=()=>z.jsx(z.Fragment,{children:z.jsx(eo,{children:z.jsx(lo,{children:z.jsxs(Ux,{children:[z.jsx(Hx,{children:z.jsxs(Bx,{children:[z.jsx(qx,{children:"Hi, I'm Maryna Herasymenko"}),z.jsxs(Lx,{children:["Frontend Developer ",z.jsx("span",{children:"|"})," React Enthusiast ",z.jsx("span",{children:"|"})," Lifelong Learner"]}),z.jsxs(Yx,{children:[z.jsx(Gx,{children:"Resume"}),z.jsx("a",{href:"/CV_Maryna_Herasymenko.pdf",download:"CV_Maryna_Herasymenko.pdf",target:"_blank",rel:"noopener noreferrer",title:"Download CV","aria-label":"Download CV",children:z.jsx(S0,{children:"Download as PDF"})})]}),z.jsxs(Xx,{children:[z.jsxs(Qx,{children:[z.jsx("h3",{children:"A closer look at my profile"}),z.jsxs("p",{children:["I'm Maryna Herasymenko, an aspiring Frontend Developer passionate about building modern and user-friendly web applications. After a strong background in business and data management, I transitioned into IT with a focus on frontend development. I have hands-on experience as a trainee, working with ",z.jsx("span",{children:"React"}),", API integration, and full-cycle application development from design to testing. With strong foundation in ",z.jsx("span",{children:"HTML"}),", ",z.jsx("span",{children:"CSS"}),", ",z.jsx("span",{children:"JavaScript"})," and ",z.jsx("span",{children:"TypeScript"}),", and modern frontend technologies, supported by specialized training in frontend development, IT support, and ",z.jsx("span",{children:"software testing"}),". My goal is to deliver high-quality code and exceptional user experiences. I'm always eager to learn new technologies and improve my skills."]})]}),z.jsx(Zx,{children:z.jsx(Vx,{src:kx,alt:"Maryna Herasymenko"})})]}),z.jsxs(Kx,{children:[z.jsxs(Om,{children:[z.jsx(_m,{children:"Experience and Technologies"}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Experience"}),z.jsx("p",{children:"React Trainee @ ti&m, Zurich"}),z.jsx("div",{children:"June 2022 - July 2023"})]}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Technologies"}),z.jsx("p",{children:"JavaScript, React, TypeScript, HTML, CSS, API Integration, WordPress"})]}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Tools"}),z.jsx("p",{children:"Git, GitHub, Gitlab, Vite, CRA, Figma"})]})]}),z.jsxs(Om,{children:[z.jsx(_m,{children:"Education and Languages"}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Education"}),z.jsx("p",{children:"Master's Degree in Food Technologies"}),z.jsx("div",{children:"National University of Food Technology (Ukraine)"}),z.jsx("div",{children:"September 2009 - June 2014"})]}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Languages"}),z.jsx("p",{children:"English, German, Russian, Ukrainian"})]}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Certifications"}),z.jsxs(Mm,{children:["IT Support Certificate - Google, Coursera",z.jsx("a",{href:"https://www.coursera.org/account/accomplishments/professional-cert/2AYQLX6CZ4ZM",target:"_blank",rel:"noopener noreferrer",children:z.jsx(Dm,{})})]}),z.jsxs(Mm,{children:["Digital marketing - Google, Coursera",z.jsx("a",{href:"https://www.coursera.org/account/accomplishments/professional-cert/VSMTYPQVPWLQ",target:"_blank",rel:"noopener noreferrer",children:z.jsx(Dm,{})})]}),z.jsx("p",{children:"Certified Tester Foundation Level - ISTQB, Zurich"})]})]})]})]})}),z.jsx(O0,{})]})})})});function $x(){return z.jsx(t1,{children:z.jsxs(ru,{path:"/",element:z.jsx(fx,{}),children:[z.jsx(ru,{index:!0,element:z.jsx(Qv,{})}),z.jsx(ru,{path:"projects",element:z.jsx(jx,{})}),z.jsx(ru,{path:"about",element:z.jsx(Jx,{})})]})})}const Cm=document.getElementById("root");Cm?ig.createRoot(Cm).render(z.jsx(N.StrictMode,{children:z.jsx(A1,{basename:"/portfolio_marina",children:z.jsx($x,{})})})):console.error("Root element not found");
