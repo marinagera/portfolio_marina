@@ -30,7 +30,7 @@ const HomePage = () => {
               </InfoItem>
               <InfoItem>
                 <div>
-                <Link to="/projects">Projects -&gt;</Link>
+                  <Link to="/projects">Projects -&gt;</Link>
                 </div>
               </InfoItem>
             </InfoList>

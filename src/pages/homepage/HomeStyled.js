@@ -115,7 +115,7 @@ export const InfoItem = styled.li`
 
     @media screen and (max-width: 440px) {
       font-size: 16px;
-  }
+    }
   }
 
   a {

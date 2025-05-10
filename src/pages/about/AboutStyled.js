@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import { HiOutlineExternalLink } from "react-icons/hi";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 
 export const AboutWrapper = styled.div`
   display: flex;
@@ -275,6 +279,19 @@ export const ArticleContent = styled.div`
   }
 `;
 
+export const AboutTextWithLinks = styled.p`
+  display: flex;
+
+  a {
+    display:  flex;
+    align-items: center;
+  }
+`;
+
+export const ExternalLinkStyled = styled(HiOutlineExternalLink)`
+  margin-left: 6px;
+`;
+
 export const ContactSection = styled.div`
   display: flex;
   flex-direction: column;
@@ -309,9 +326,9 @@ export const ContactSection = styled.div`
 
   ul {
     display: flex;
-    gap: 200px;
+    justify-content: space-between;
     list-style: none;
-    margin-bottom: 20px;
+    margin: 26px 0 20px;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
@@ -349,7 +366,11 @@ export const ContactSection = styled.div`
 
     @media screen and (max-width: 600px) {
     font-size: 1rem;
+    }
   }
+
+  a:hover, a span:hover {
+    color: ${({ theme }) => theme.greyText}
   }
 
   @media screen and (max-width: 992px) {
@@ -357,3 +378,23 @@ export const ContactSection = styled.div`
   }
 `;
 
+export const ContactSectionLink = styled.li`
+  display: flex;
+
+  a {
+    display:  flex;
+    align-items: center;
+  }
+`;
+
+export const GithubIconsStyled = styled(FaGithub)`
+  margin-right: 8px;
+`;
+
+export const LinkedinIconsStyled = styled(FaLinkedinIn)`
+  margin-right: 8px;
+`;
+
+export const EmailIconsStyled = styled(MdOutlineEmail)`
+  margin: 3px 6px 0 0;
+`;

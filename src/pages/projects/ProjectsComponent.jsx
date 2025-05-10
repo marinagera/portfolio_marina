@@ -24,7 +24,11 @@ const ProjectsComponent = () => {
                 Feel free to reach out if you'd like to collaborate or learn more about my work.
               </p>
               <ul>
-                <li>Email: <span>maryna.herasymenko@powercoders.org</span></li>
+                <li>Email: 
+                  <a href="mailto:maryna.herasymenko@powercoders.org">
+                    <span>maryna.herasymenko@powercoders.org</span>
+                  </a>
+                </li>
                 <li> 
                   <a href="https://www.linkedin.com/in/maryna-herasymenko-7762a99a/" target='_blank' rel="noopener noreferrer" title="LinkedIn Profile">
                   Linkedin

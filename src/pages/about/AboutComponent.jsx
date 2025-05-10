@@ -8,7 +8,10 @@ import {
   AboutArticle, ArticleTitle,
   ArticleContent, ArticleSubtitle,
   AboutArticleContainer,
-  Image, ContactSection
+  Image, ContactSection,
+  AboutTextWithLinks, ExternalLinkStyled,
+  ContactSectionLink, GithubIconsStyled,
+  LinkedinIconsStyled, EmailIconsStyled
 } from './AboutStyled';
 import { LayoutContainer, LayoutWrapper } from '../layout/LayoutStyled';
 import MarynaPhoto from '../../assets/images/maryna_photo.jpg';
@@ -87,16 +90,18 @@ const AboutComponent = () => {
                     </ArticleContent>
                     <ArticleContent>
                       <ArticleSubtitle>Certifications</ArticleSubtitle>
-                          <p>
+                          <AboutTextWithLinks>
+                            IT Support Certificate - Google, Coursera
                             <a href="https://www.coursera.org/account/accomplishments/professional-cert/2AYQLX6CZ4ZM" target='_blank' rel="noopener noreferrer">
-                              IT Support Certificate - Google, Coursera
+                              <ExternalLinkStyled />
                             </a>
-                          </p>
-                          <p>
+                          </AboutTextWithLinks>
+                          <AboutTextWithLinks>
+                            Digital marketing - Google, Coursera
                             <a href="https://www.coursera.org/account/accomplishments/professional-cert/VSMTYPQVPWLQ" target='_blank' rel="noopener noreferrer">
-                              Digital marketing - Google, Coursera
+                              <ExternalLinkStyled />
                             </a>
-                          </p>
+                          </AboutTextWithLinks>
                         <p>Certified Tester Foundation Level - ISTQB, Zurich</p>
                     </ArticleContent>
                   </AboutArticle>
@@ -112,12 +117,24 @@ const AboutComponent = () => {
                 Feel free to reach out if you'd like to collaborate or learn more about my work.
               </p>
               <ul>
-                <li>Email: <span>maryna.herasymenko@powercoders.org</span></li>
-                <li> 
-                  <a href="https://www.linkedin.com/in/maryna-herasymenko-7762a99a/" target='_blank' rel="noopener noreferrer" title="LinkedIn Profile">
-                  Linkedin
+                <ContactSectionLink>
+                  <a href="mailto:maryna.herasymenko@powercoders.org">
+                    <EmailIconsStyled />
+                    <span>maryna.herasymenko@powercoders.org</span>
                   </a>
-                </li>
+                </ContactSectionLink>
+                <ContactSectionLink> 
+                  <a href="https://www.linkedin.com/in/maryna-herasymenko-7762a99a/" target='_blank' rel="noopener noreferrer" title="LinkedIn Profile">
+                    <LinkedinIconsStyled />
+                    Linkedin
+                  </a>
+                </ContactSectionLink>
+                <ContactSectionLink> 
+                  <a href="https://github.com/marinagera" target='_blank' rel="noopener noreferrer" title="Github Profile">
+                    <GithubIconsStyled />
+                    Github
+                  </a>
+                </ContactSectionLink>
               </ul>
             </ContactSection>
           </AboutWrapper>

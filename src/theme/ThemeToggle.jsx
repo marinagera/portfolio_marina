@@ -1,7 +1,5 @@
-import React from "react";
 import styled from 'styled-components';
-import MoonIcon from '../assets/images/moon.png';
-import SunIcon from '../assets/images/sun.png';
+import { FiMoon, FiSun } from 'react-icons/fi';
 
 const ToggleContainer = styled.div`
   display: flex;
@@ -62,12 +60,13 @@ const Slider = styled.span`
   }
 `;
 
-const ThemeIcon = styled.img`
-  width: 16px;
-  height: 16px;
-  background-color:  ${({ theme }) => theme.background};
-  color:  ${({ theme }) => theme.text};
-  transition: all 0.1s ease-in-out;
+const ThemedIcon = styled.div`
+  color: ${({ theme }) => theme.text};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: all 0.5s ease-in-out;
 `;
 
 const ThemeToggle = ({ isDarkMode, toggleTheme }) => {
@@ -79,7 +78,9 @@ const ThemeToggle = ({ isDarkMode, toggleTheme }) => {
           <Slider />
         </SwitchLabel>
       </ToggleWrapper>
-      <ThemeIcon  src={isDarkMode ? MoonIcon : SunIcon} alt="Moon icon" />
+      <ThemedIcon>
+        {isDarkMode ? <FiMoon /> : <FiSun />}
+      </ThemedIcon>
     </ToggleContainer>
   )
 };
