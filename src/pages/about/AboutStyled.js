@@ -61,6 +61,8 @@ export const AboutDescription = styled.p`
 
   span {
     color: ${({ theme }) => theme.mainColor};
+    display: inline-block;
+    margin: 0px 4px;
   };
 
   @media screen and (max-width: 440px) {
@@ -78,12 +80,16 @@ export const ResumeContainer = styled.div`
   margin: 20px 0;
   padding: 30px 40px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   background-color: ${({ theme }) => theme.greyBackground};
   color: ${({ theme }) => theme.text};
   transition: all 0.1s ease;
 
   @media screen and (max-width: 440px) {
+    padding: 20px 14px;
+  }
+
+  @media screen and (max-width: 390px) {
     flex-direction: column;
     padding: 14px;
   }
@@ -96,7 +102,7 @@ export const ResumeContent = styled.p`
   line-height: 1.4;
   text-align: center;
 
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 390px) {
     margin-bottom: 20px;
   }
 `;
@@ -105,13 +111,15 @@ export const AboutSection = styled.div`
   display: flex;
   gap: 60px;
   margin-top: 60px;
+  padding: 0 40px;
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1200px) {
     padding: 0;
   }
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    gap: 36px;
   }
 `;
 
@@ -171,12 +179,12 @@ export const AboutImage = styled.div`
 
 export const Image = styled.img`
   width: auto;
-  height: 400px;
+  height: 350px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 
   @media screen and (max-width: 992px) {
-    height: 350px;
+    height: 300px;
   }
 
   @media screen and (max-width: 768px) {
@@ -185,7 +193,7 @@ export const Image = styled.img`
 
   @media screen and (max-width: 600px) {
     width: auto;
-    max-height: 300px;
+    max-height: 250px;
   }
 `;
 
@@ -205,6 +213,7 @@ export const AboutArticleContainer = styled.div`
   @media screen and (max-width: 1400px) {
     margin-top: 50px;
     flex-direction: column;
+    gap: 10px;
   }
 
   @media screen and (max-width: 768px) {
@@ -219,11 +228,9 @@ export const AboutArticle = styled.div`
   gap: 20px;
   margin: 20px 0;
 
-  p {
-    font-size: 1.1rem;
-    color: ${({ theme }) => theme.text};
-    line-height: 1.4;
-  }
+  /* p {
+    
+  } */
 
   @media screen and (max-width: 1400px) {
     width: 100%;
@@ -253,11 +260,21 @@ export const ArticleContent = styled.div`
   padding: 30px 40px;
   text-align: start;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   background-color: ${({ theme }) => theme.greyBackground};
 
   p {
+    font-size: 1.1rem;
+    color: ${({ theme }) => theme.text};
+    line-height: 1.4;
     margin-bottom: 8px;
+  }
+
+  div {
+    font-size: 1rem;
+    color: ${({ theme }) => theme.greyText};
+    line-height: 1.4;
+    margin-bottom: 6px;
   }
 
   a {

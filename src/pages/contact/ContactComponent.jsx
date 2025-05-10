@@ -11,7 +11,7 @@ const ContactComponent = () => {
     <ContactSection>
       <h3>Let's connect</h3>
       <p>
-        I'm currently open to frontend-development positions.  
+        I'm currently open to web development roles.  
         Feel free to reach out if you'd like to collaborate or learn more about my work.
       </p>
       <ul>

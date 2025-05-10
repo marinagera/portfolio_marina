@@ -42,14 +42,16 @@ const AboutComponent = () => {
                 <AboutSection>
                   <AboutSectionContent>
                     <h3>A closer look at my profile</h3>
-                    {/* <p>
-                      My journey in tech started with a curiosity for how things work, and it has evolved into a love for creating solutions that make life easier.
-                    </p> */}
                     
                     <p>
-                      I'm an aspiring Frontend Developer with one year of hands-on experience as a trainee, working with <span>React</span>, API integration, and full-cycle application development from design to testing. With strong foundation in <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> and <span>TypeScript</span>, and modern frontend technologies, supported by specialized training in frontend development, <span>IT support</span>, and software <span>testing</span>.
+                      I'm Maryna Herasymenko, an aspiring Frontend Developer passionate about building modern and user-friendly web applications.
+
+                      After a strong background in business and data management, I transitioned into IT with a focus on frontend development.
+
+                      I have hands-on experience as a trainee, working with <span>React</span>, API integration, and full-cycle application development from design to testing. With strong foundation in <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> and <span>TypeScript</span>, and modern frontend technologies, supported by specialized training in frontend development, IT support, and <span>software testing</span>.
                       My goal is to deliver high-quality code and exceptional user experiences. I'm always eager to learn new technologies and improve my skills.
                     </p>
+                    
                   </AboutSectionContent>
                   
                   <AboutImage>
@@ -63,15 +65,15 @@ const AboutComponent = () => {
                     <ArticleContent>
                       <ArticleSubtitle>Experience</ArticleSubtitle>
                         <p>React Trainee @ ti&m, Zurich</p>
-                        <p>June 2022 - July 2023</p>
+                        <div>June 2022 - July 2023</div>
                     </ArticleContent>
                     <ArticleContent>
                       <ArticleSubtitle>Technologies</ArticleSubtitle>
-                        <p>JavaScript, React, TypeScript, HTML, CSS, API, WordPress</p>
+                        <p>JavaScript, React, TypeScript, HTML, CSS, API Integration, WordPress</p>
                     </ArticleContent>
                     <ArticleContent>
                       <ArticleSubtitle>Tools</ArticleSubtitle>
-                        <p>Git, GitHub, Gitlab, Vite, CRA, Figma </p>
+                        <p>Git, GitHub, Gitlab, Vite, CRA, Figma</p>
                     </ArticleContent>
                   </AboutArticle>
 
@@ -80,8 +82,8 @@ const AboutComponent = () => {
                     <ArticleContent>
                       <ArticleSubtitle>Education</ArticleSubtitle>
                         <p>Master's Degree in Food Technologies</p>
-                        <p>National University of Food Technology (Ukraine)</p>
-                        <p>September 2009 - June 2014</p>
+                        <div>National University of Food Technology (Ukraine)</div>
+                        <div>September 2009 - June 2014</div>
                     </ArticleContent>
                     <ArticleContent>
                       <ArticleSubtitle>Languages</ArticleSubtitle>
