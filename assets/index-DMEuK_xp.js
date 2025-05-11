@@ -426,7 +426,7 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
 
   img, video {
     width: 100%;
-    height: 400px;
+    height: 420px;
     object-fit: cover;
     transition: transform 0.7s ease;
 
@@ -705,8 +705,9 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   display: flex;
   gap: 60px;
   margin-top: 60px;
+  padding: 0 40px;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1600px) {
     padding: 0;
   }
 
@@ -769,10 +770,6 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   height: 300px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-
-  /* @media screen and (max-width: 992px) {
-    height: 300px;
-  } */
 
   @media screen and (max-width: 768px) {
     width: auto;
