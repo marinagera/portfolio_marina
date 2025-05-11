@@ -13,7 +13,9 @@ const ProjectsComponent = () => {
         <LayoutContainer>
           <ProjectsWrapper>
           <ProjectsTitle>Projects</ProjectsTitle>
-          <ProjectsDescription>Featured projects showcasing digital experiences I've crafted with attention to detail and user-centric design.</ProjectsDescription>
+          <ProjectsDescription>
+            Featured projects showcasing digital experiences I've crafted with attention to detail and user-centric design.
+          </ProjectsDescription>
             <CardsComponent />
           </ProjectsWrapper>
           <ContactSectionWrapper>

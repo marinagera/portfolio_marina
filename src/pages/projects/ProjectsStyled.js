@@ -39,7 +39,7 @@ export const CardsWrapper = styled.div`
 export const CardGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 40px;
   grid-row-gap: 50px;
   height: min-content;
 
@@ -67,17 +67,19 @@ export const MediaContainer = styled.div`
   position: relative;
   width: 100%;
 
-  img {
+  img, video {
     width: 100%;
-    height: 420px;
+    height: 400px;
     object-fit: cover;
     transition: transform 0.7s ease;
 
-    @media screen and (max-width: 600px) {
-      width: auto;
-      height: 100%;
-      max-height: 250px;
-      object-fit: contain;
+    @media screen and (max-width: 992px) {
+      height: 350px;
+    }
+
+    @media screen and (max-width: 576px) {
+      height: 220px;
+      object-fit: cover;
     }
   }
 

@@ -7,9 +7,9 @@ export const ContactSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 60px;
+  padding: 60px 60px 20px;
   border-top: 3px solid rgba(245, 235, 235, 1);
-  margin: 40px 0;
+  margin-top: 60px;
 
   ${({ theme }) =>
     theme.name === 'dark' &&
@@ -48,6 +48,10 @@ export const ContactSection = styled.div`
       
       li:nth-child(2), li:nth-child(3) {
         width: 50%;
+      }
+
+      li:nth-child(3) {
+        justify-content: end;
       } 
     }
   }

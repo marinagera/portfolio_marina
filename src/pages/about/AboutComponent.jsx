@@ -67,7 +67,7 @@ const AboutComponent = () => {
                         <p>React Trainee @ ti&m, Zurich</p>
                         <div>June 2022 - July 2023</div>
                     </ArticleContent>
-                    <ArticleContent>
+                    <ArticleContent className="tall">
                       <ArticleSubtitle>Technologies</ArticleSubtitle>
                         <p>JavaScript, React, TypeScript, HTML, CSS, API Integration, WordPress</p>
                     </ArticleContent>
@@ -79,17 +79,17 @@ const AboutComponent = () => {
 
                   <AboutArticle>
                     <ArticleTitle>Education and Languages</ArticleTitle>
-                    <ArticleContent>
+                    <ArticleContent className="tall">
                       <ArticleSubtitle>Education</ArticleSubtitle>
                         <p>Master's Degree in Food Technologies</p>
-                        <div>National University of Food Technology (Ukraine)</div>
+                        <div>National University of Food Technology, Kiew, Ukraine</div>
                         <div>September 2009 - June 2014</div>
                     </ArticleContent>
                     <ArticleContent>
                       <ArticleSubtitle>Languages</ArticleSubtitle>
                         <p>English, German, Russian, Ukrainian</p>
                     </ArticleContent>
-                    <ArticleContent>
+                    <ArticleContent className="tall">
                       <ArticleSubtitle>Certifications</ArticleSubtitle>
                           <AboutTextWithLinks>
                             IT Support Certificate - Google, Coursera

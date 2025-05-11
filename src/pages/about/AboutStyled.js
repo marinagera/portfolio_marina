@@ -111,7 +111,6 @@ export const AboutSection = styled.div`
   display: flex;
   gap: 60px;
   margin-top: 60px;
-  padding: 0 40px;
 
   @media screen and (max-width: 1200px) {
     padding: 0;
@@ -179,13 +178,13 @@ export const AboutImage = styled.div`
 
 export const Image = styled.img`
   width: auto;
-  height: 350px;
+  height: 300px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 
-  @media screen and (max-width: 992px) {
+  /* @media screen and (max-width: 992px) {
     height: 300px;
-  }
+  } */
 
   @media screen and (max-width: 768px) {
     width: auto;
@@ -198,43 +197,28 @@ export const Image = styled.img`
 `;
 
 export const AboutArticleContainer = styled.div`
-  display: flex;
-  gap: 60px;
-  margin: 0;
+  columns: 2;
+  column-gap: 60px;
+  margin-top: 80px;
 
-  >:nth-child(2) {
-    margin-top: 120px;
+  @media screen and (max-width: 1200px) {
+    columns: 1;
+  }
 
-    @media screen and (max-width: 1400px) {
-      margin-top: 20px;
+  > * {
+    break-inside: avoid;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 80px;
     }
-  }
-
-  @media screen and (max-width: 1400px) {
-    margin-top: 50px;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  @media screen and (max-width: 768px) {
-    margin-top: 22px;
   }
 `;
 
 export const AboutArticle = styled.div`
-  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin: 20px 0;
-
-  /* p {
-    
-  } */
-
-  @media screen and (max-width: 1400px) {
-    width: 100%;
-  }
+  gap: 40px;
 `;
 
 export const ArticleTitle = styled.h2`
@@ -242,7 +226,11 @@ export const ArticleTitle = styled.h2`
   font-weight: 700;
   color: ${({ theme }) => theme.text};
   margin-bottom: 20px;
+
   
+  &:nth-of-type(2) {
+    margin-top: 40px;
+  }
 `;
 
 export const ArticleSubtitle = styled.h3`
@@ -254,20 +242,35 @@ export const ArticleSubtitle = styled.h3`
 
 export const ArticleContent = styled.div`
   font-size: 1.1rem;
-  height: 200px;
+  height: 160px;
   color: ${({ theme }) => theme.text};
-  margin-bottom: 20px;
   padding: 30px 40px;
   text-align: start;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   background-color: ${({ theme }) => theme.greyBackground};
 
+  &.tall {
+    height: 230px;
+
+    @media screen and (max-width: 1200px) {
+      height: 190px;
+      min-height: fit-content;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: fit-content;
+    }
+  }
+
   p {
     font-size: 1.1rem;
-    color: ${({ theme }) => theme.text};
-    line-height: 1.4;
+    line-height: 2;
     margin-bottom: 8px;
+
+    @media screen and (max-width: 768px) {
+      line-height: 1.4;
+    }
   }
 
   div {
@@ -285,6 +288,10 @@ export const ArticleContent = styled.div`
 
   a:hover {
     color: ${({ theme }) => theme.mainColor}
+  }
+
+  @media screen and (max-width: 1200px) {
+    height: 190px;
   }
 
   @media screen and (max-width: 768px) {

@@ -1,4 +1,4 @@
-# Maryna Herasymenko — Personal Portfolio
+# ✨ Maryna Herasymenko - Personal Portfolio
 
 Welcome to my personal portfolio website!  
 This is a responsive React-based web app built with **Vite**, **styled-components**, and deployed on **GitHub Pages**.

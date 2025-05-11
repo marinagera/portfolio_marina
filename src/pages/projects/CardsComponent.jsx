@@ -6,10 +6,10 @@ import {
   ProjectTitle,CardLink
 } from './ProjectsStyled';
 
-import ShopImage from '../../assets/images/Shop.png';
+import ShopImage from '../../assets/images/Shop_2.png';
 import ClipsImage from '../../assets/images/Clips.png';
 import Miami from '../../assets/images/Miami_landing.png';
-import Recipes from '../../assets/images/Recipes.png';
+import Recipes from '../../assets/images/Recipes_2.jpg';
 
 const projectData = [
   {
