@@ -400,7 +400,7 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
 `,mx=J.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 40px;
   grid-row-gap: 50px;
   height: min-content;
 
@@ -424,17 +424,19 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   position: relative;
   width: 100%;
 
-  img {
+  img, video {
     width: 100%;
-    height: 420px;
+    height: 400px;
     object-fit: cover;
     transition: transform 0.7s ease;
 
-    @media screen and (max-width: 600px) {
-      width: auto;
-      height: 100%;
-      max-height: 250px;
-      object-fit: contain;
+    @media screen and (max-width: 992px) {
+      height: 350px;
+    }
+
+    @media screen and (max-width: 576px) {
+      height: 220px;
+      object-fit: cover;
     }
   }
 
@@ -495,13 +497,13 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   display: block;
   text-decoration: none;
   color: ${({theme:n})=>n.text};
-`,Tx="/portfolio_marina/assets/Shop-CR5DTd-U.png",Ax="/portfolio_marina/assets/Clips-GsNxpVeK.png",zx="/portfolio_marina/assets/Miami_landing-DundChIi.png",Rx="/portfolio_marina/assets/Recipes-CEJaIBjt.png",Ox=[{id:1,title:"Sport Shop",description:"A clothing store website built with HTML and CSS.",image:Tx,technologies:"HTML, CSS",whatWasLearned:"HTML, CSS, Flexbox, Grid",link:"https://marinagera.github.io/sport_shop/index.html"},{id:2,title:"Clips",description:"A web application that allows users to create and share short video clips.",image:Ax,technologies:"Angular, TypeScript, Firebase",link:"https://clips-iota-silk.vercel.app/"},{id:3,title:"Miami Landing Page",description:"A landing page for a Miami-based travel agency.",image:zx,technologies:"HTML, CSS",link:"https://marinagera.github.io/miami_landing/"},{id:4,title:"Delicious Recipes",description:"A recipe website that allows users to search for their favorite recipes.",image:Rx,technologies:"HTML, CSS",link:"https://recipe-website-herasymenko.netlify.app/"}],_x=()=>z.jsx(z.Fragment,{children:z.jsx(hx,{children:z.jsx(mx,{children:Ox.map(n=>z.jsx(px,{children:z.jsxs(Ex,{href:n.link,target:"_blank",rel:"noopener noreferrer",children:[z.jsx(yx,{children:n.video?z.jsxs(gx,{autoPlay:!0,loop:!0,muted:!0,children:[z.jsx("source",{src:n.video,type:"video/mp4"}),"Your browser does not support the video tag."]}):z.jsx("img",{src:n.image,alt:n.title})}),z.jsx(vx,{children:n.title}),z.jsx(xx,{children:n.description}),z.jsxs(bx,{children:["Technologies: ",n.technologies]})]})},n.id))})})});function A0(n){return un({attr:{viewBox:"0 0 496 512"},child:[{tag:"path",attr:{d:"M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"},child:[]}]})(n)}function z0(n){return un({attr:{viewBox:"0 0 448 512"},child:[{tag:"path",attr:{d:"M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"},child:[]}]})(n)}function R0(n){return un({attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{fill:"none",d:"M0 0h24v24H0V0z"},child:[]},{tag:"path",attr:{d:"M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"},child:[]}]})(n)}const Mx=J.div`
+`,Tx="/portfolio_marina/assets/Shop_smaller-CA8oE_8u.png",Ax="/portfolio_marina/assets/Clips-GsNxpVeK.png",zx="/portfolio_marina/assets/Miami_landing-DundChIi.png",Rx="/portfolio_marina/assets/Recipes_smaller-C9h4B3OJ.jpg",Ox=[{id:1,title:"Sport Shop",description:"A clothing store website built with HTML and CSS.",image:Tx,technologies:"HTML, CSS",whatWasLearned:"HTML, CSS, Flexbox, Grid",link:"https://marinagera.github.io/sport_shop/index.html"},{id:2,title:"Clips",description:"A web application that allows users to create and share short video clips.",image:Ax,technologies:"Angular, TypeScript, Firebase",link:"https://clips-iota-silk.vercel.app/"},{id:3,title:"Miami Landing Page",description:"A landing page for a Miami-based travel agency.",image:zx,technologies:"HTML, CSS",link:"https://marinagera.github.io/miami_landing/"},{id:4,title:"Delicious Recipes",description:"A recipe website that allows users to search for their favorite recipes.",image:Rx,technologies:"HTML, CSS",link:"https://recipe-website-herasymenko.netlify.app/"}],_x=()=>z.jsx(z.Fragment,{children:z.jsx(hx,{children:z.jsx(mx,{children:Ox.map(n=>z.jsx(px,{children:z.jsxs(Ex,{href:n.link,target:"_blank",rel:"noopener noreferrer",children:[z.jsx(yx,{children:n.video?z.jsxs(gx,{autoPlay:!0,loop:!0,muted:!0,children:[z.jsx("source",{src:n.video,type:"video/mp4"}),"Your browser does not support the video tag."]}):z.jsx("img",{src:n.image,alt:n.title})}),z.jsx(vx,{children:n.title}),z.jsx(xx,{children:n.description}),z.jsxs(bx,{children:["Technologies: ",n.technologies]})]})},n.id))})})});function A0(n){return un({attr:{viewBox:"0 0 496 512"},child:[{tag:"path",attr:{d:"M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"},child:[]}]})(n)}function z0(n){return un({attr:{viewBox:"0 0 448 512"},child:[{tag:"path",attr:{d:"M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"},child:[]}]})(n)}function R0(n){return un({attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{fill:"none",d:"M0 0h24v24H0V0z"},child:[]},{tag:"path",attr:{d:"M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"},child:[]}]})(n)}const Mx=J.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 60px;
+  padding: 60px 60px 20px;
   border-top: 3px solid rgba(245, 235, 235, 1);
-  margin: 40px 0;
+  margin-top: 60px;
 
   ${({theme:n})=>n.name==="dark"&&`
       border-top: 2px solid ${n.greyColor};
@@ -538,6 +540,10 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
       
       li:nth-child(2), li:nth-child(3) {
         width: 50%;
+      }
+
+      li:nth-child(3) {
+        justify-content: end;
       } 
     }
   }
@@ -699,7 +705,6 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   display: flex;
   gap: 60px;
   margin-top: 60px;
-  padding: 0 40px;
 
   @media screen and (max-width: 1200px) {
     padding: 0;
@@ -761,13 +766,13 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   }
 `,Vx=J.img`
   width: auto;
-  height: 350px;
+  height: 300px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 
-  @media screen and (max-width: 992px) {
+  /* @media screen and (max-width: 992px) {
     height: 300px;
-  }
+  } */
 
   @media screen and (max-width: 768px) {
     width: auto;
@@ -778,47 +783,36 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
     max-height: 250px;
   }
 `,Kx=J.div`
-  display: flex;
-  gap: 60px;
-  margin: 0;
+  columns: 2;
+  column-gap: 60px;
+  margin-top: 80px;
 
-  >:nth-child(2) {
-    margin-top: 120px;
+  @media screen and (max-width: 1200px) {
+    columns: 1;
+  }
 
-    @media screen and (max-width: 1400px) {
-      margin-top: 20px;
+  > * {
+    break-inside: avoid;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 80px;
     }
   }
-
-  @media screen and (max-width: 1400px) {
-    margin-top: 50px;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  @media screen and (max-width: 768px) {
-    margin-top: 22px;
-  }
 `,Om=J.div`
-  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin: 20px 0;
-
-  /* p {
-    
-  } */
-
-  @media screen and (max-width: 1400px) {
-    width: 100%;
-  }
+  gap: 40px;
 `,_m=J.h2`
   font-size: 1.5rem;
   font-weight: 700;
   color: ${({theme:n})=>n.text};
   margin-bottom: 20px;
+
   
+  &:nth-of-type(2) {
+    margin-top: 40px;
+  }
 `,$a=J.h3`
   font-size: 1.3rem;
   font-weight: 700;
@@ -826,20 +820,35 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   margin-bottom: 20px;
 `,Wa=J.div`
   font-size: 1.1rem;
-  height: 200px;
+  height: 160px;
   color: ${({theme:n})=>n.text};
-  margin-bottom: 20px;
   padding: 30px 40px;
   text-align: start;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   background-color: ${({theme:n})=>n.greyBackground};
 
+  &.tall {
+    height: 230px;
+
+    @media screen and (max-width: 1200px) {
+      height: 190px;
+      min-height: fit-content;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: fit-content;
+    }
+  }
+
   p {
     font-size: 1.1rem;
-    color: ${({theme:n})=>n.text};
-    line-height: 1.4;
+    line-height: 2;
     margin-bottom: 8px;
+
+    @media screen and (max-width: 768px) {
+      line-height: 1.4;
+    }
   }
 
   div {
@@ -857,6 +866,10 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
 
   a:hover {
     color: ${({theme:n})=>n.mainColor}
+  }
+
+  @media screen and (max-width: 1200px) {
+    height: 190px;
   }
 
   @media screen and (max-width: 768px) {
@@ -970,4 +983,4 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   margin-right: 8px;
 `;J(R0)`
   margin: 3px 6px 0 0;
-`;const kx="/portfolio_marina/assets/Maryna_photo-PbuneyeY.jpg",Jx=()=>z.jsx(z.Fragment,{children:z.jsx(eo,{children:z.jsx(lo,{children:z.jsxs(Ux,{children:[z.jsx(Hx,{children:z.jsxs(Bx,{children:[z.jsx(qx,{children:"Hi, I'm Maryna Herasymenko"}),z.jsxs(Lx,{children:["Frontend Developer ",z.jsx("span",{children:"|"})," React Enthusiast ",z.jsx("span",{children:"|"})," Lifelong Learner"]}),z.jsxs(Yx,{children:[z.jsx(Gx,{children:"Resume"}),z.jsx("a",{href:"/CV_Maryna_Herasymenko.pdf",download:"CV_Maryna_Herasymenko.pdf",target:"_blank",rel:"noopener noreferrer",title:"Download CV","aria-label":"Download CV",children:z.jsx(S0,{children:"Download as PDF"})})]}),z.jsxs(Xx,{children:[z.jsxs(Qx,{children:[z.jsx("h3",{children:"A closer look at my profile"}),z.jsxs("p",{children:["I'm Maryna Herasymenko, an aspiring Frontend Developer passionate about building modern and user-friendly web applications. After a strong background in business and data management, I transitioned into IT with a focus on frontend development. I have hands-on experience as a trainee, working with ",z.jsx("span",{children:"React"}),", API integration, and full-cycle application development from design to testing. With strong foundation in ",z.jsx("span",{children:"HTML"}),", ",z.jsx("span",{children:"CSS"}),", ",z.jsx("span",{children:"JavaScript"})," and ",z.jsx("span",{children:"TypeScript"}),", and modern frontend technologies, supported by specialized training in frontend development, IT support, and ",z.jsx("span",{children:"software testing"}),". My goal is to deliver high-quality code and exceptional user experiences. I'm always eager to learn new technologies and improve my skills."]})]}),z.jsx(Zx,{children:z.jsx(Vx,{src:kx,alt:"Maryna Herasymenko"})})]}),z.jsxs(Kx,{children:[z.jsxs(Om,{children:[z.jsx(_m,{children:"Experience and Technologies"}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Experience"}),z.jsx("p",{children:"React Trainee @ ti&m, Zurich"}),z.jsx("div",{children:"June 2022 - July 2023"})]}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Technologies"}),z.jsx("p",{children:"JavaScript, React, TypeScript, HTML, CSS, API Integration, WordPress"})]}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Tools"}),z.jsx("p",{children:"Git, GitHub, Gitlab, Vite, CRA, Figma"})]})]}),z.jsxs(Om,{children:[z.jsx(_m,{children:"Education and Languages"}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Education"}),z.jsx("p",{children:"Master's Degree in Food Technologies"}),z.jsx("div",{children:"National University of Food Technology (Ukraine)"}),z.jsx("div",{children:"September 2009 - June 2014"})]}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Languages"}),z.jsx("p",{children:"English, German, Russian, Ukrainian"})]}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Certifications"}),z.jsxs(Mm,{children:["IT Support Certificate - Google, Coursera",z.jsx("a",{href:"https://www.coursera.org/account/accomplishments/professional-cert/2AYQLX6CZ4ZM",target:"_blank",rel:"noopener noreferrer",children:z.jsx(Dm,{})})]}),z.jsxs(Mm,{children:["Digital marketing - Google, Coursera",z.jsx("a",{href:"https://www.coursera.org/account/accomplishments/professional-cert/VSMTYPQVPWLQ",target:"_blank",rel:"noopener noreferrer",children:z.jsx(Dm,{})})]}),z.jsx("p",{children:"Certified Tester Foundation Level - ISTQB, Zurich"})]})]})]})]})}),z.jsx(O0,{})]})})})});function $x(){return z.jsx(t1,{children:z.jsxs(ru,{path:"/",element:z.jsx(fx,{}),children:[z.jsx(ru,{index:!0,element:z.jsx(Qv,{})}),z.jsx(ru,{path:"projects",element:z.jsx(jx,{})}),z.jsx(ru,{path:"about",element:z.jsx(Jx,{})})]})})}const Cm=document.getElementById("root");Cm?ig.createRoot(Cm).render(z.jsx(N.StrictMode,{children:z.jsx(A1,{basename:"/portfolio_marina",children:z.jsx($x,{})})})):console.error("Root element not found");
+`;const kx="/portfolio_marina/assets/Maryna_photo-PbuneyeY.jpg",Jx=()=>z.jsx(z.Fragment,{children:z.jsx(eo,{children:z.jsx(lo,{children:z.jsxs(Ux,{children:[z.jsx(Hx,{children:z.jsxs(Bx,{children:[z.jsx(qx,{children:"Hi, I'm Maryna Herasymenko"}),z.jsxs(Lx,{children:["Frontend Developer ",z.jsx("span",{children:"|"})," React Enthusiast ",z.jsx("span",{children:"|"})," Lifelong Learner"]}),z.jsxs(Yx,{children:[z.jsx(Gx,{children:"Resume"}),z.jsx("a",{href:"/CV_Maryna_Herasymenko.pdf",download:"CV_Maryna_Herasymenko.pdf",target:"_blank",rel:"noopener noreferrer",title:"Download CV","aria-label":"Download CV",children:z.jsx(S0,{children:"Download as PDF"})})]}),z.jsxs(Xx,{children:[z.jsxs(Qx,{children:[z.jsx("h3",{children:"A closer look at my profile"}),z.jsxs("p",{children:["I'm Maryna Herasymenko, an aspiring Frontend Developer passionate about building modern and user-friendly web applications. After a strong background in business and data management, I transitioned into IT with a focus on frontend development. I have hands-on experience as a trainee, working with ",z.jsx("span",{children:"React"}),", API integration, and full-cycle application development from design to testing. With strong foundation in ",z.jsx("span",{children:"HTML"}),", ",z.jsx("span",{children:"CSS"}),", ",z.jsx("span",{children:"JavaScript"})," and ",z.jsx("span",{children:"TypeScript"}),", and modern frontend technologies, supported by specialized training in frontend development, IT support, and ",z.jsx("span",{children:"software testing"}),". My goal is to deliver high-quality code and exceptional user experiences. I'm always eager to learn new technologies and improve my skills."]})]}),z.jsx(Zx,{children:z.jsx(Vx,{src:kx,alt:"Maryna Herasymenko"})})]}),z.jsxs(Kx,{children:[z.jsxs(Om,{children:[z.jsx(_m,{children:"Experience and Technologies"}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Experience"}),z.jsx("p",{children:"React Trainee @ ti&m, Zurich"}),z.jsx("div",{children:"June 2022 - July 2023"})]}),z.jsxs(Wa,{className:"tall",children:[z.jsx($a,{children:"Technologies"}),z.jsx("p",{children:"JavaScript, React, TypeScript, HTML, CSS, API Integration, WordPress"})]}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Tools"}),z.jsx("p",{children:"Git, GitHub, Gitlab, Vite, CRA, Figma"})]})]}),z.jsxs(Om,{children:[z.jsx(_m,{children:"Education and Languages"}),z.jsxs(Wa,{className:"tall",children:[z.jsx($a,{children:"Education"}),z.jsx("p",{children:"Master's Degree in Food Technologies"}),z.jsx("div",{children:"National University of Food Technology, Kiew, Ukraine"}),z.jsx("div",{children:"September 2009 - June 2014"})]}),z.jsxs(Wa,{children:[z.jsx($a,{children:"Languages"}),z.jsx("p",{children:"English, German, Russian, Ukrainian"})]}),z.jsxs(Wa,{className:"tall",children:[z.jsx($a,{children:"Certifications"}),z.jsxs(Mm,{children:["IT Support Certificate - Google, Coursera",z.jsx("a",{href:"https://www.coursera.org/account/accomplishments/professional-cert/2AYQLX6CZ4ZM",target:"_blank",rel:"noopener noreferrer",children:z.jsx(Dm,{})})]}),z.jsxs(Mm,{children:["Digital marketing - Google, Coursera",z.jsx("a",{href:"https://www.coursera.org/account/accomplishments/professional-cert/VSMTYPQVPWLQ",target:"_blank",rel:"noopener noreferrer",children:z.jsx(Dm,{})})]}),z.jsx("p",{children:"Certified Tester Foundation Level - ISTQB, Zurich"})]})]})]})]})}),z.jsx(O0,{})]})})})});function $x(){return z.jsx(t1,{children:z.jsxs(ru,{path:"/",element:z.jsx(fx,{}),children:[z.jsx(ru,{index:!0,element:z.jsx(Qv,{})}),z.jsx(ru,{path:"projects",element:z.jsx(jx,{})}),z.jsx(ru,{path:"about",element:z.jsx(Jx,{})})]})})}const Cm=document.getElementById("root");Cm?ig.createRoot(Cm).render(z.jsx(N.StrictMode,{children:z.jsx(A1,{basename:"/portfolio_marina",children:z.jsx($x,{})})})):console.error("Root element not found");
