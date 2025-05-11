@@ -111,8 +111,9 @@ export const AboutSection = styled.div`
   display: flex;
   gap: 60px;
   margin-top: 60px;
+  padding: 0 40px;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1600px) {
     padding: 0;
   }
 
@@ -181,10 +182,6 @@ export const Image = styled.img`
   height: 300px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-
-  /* @media screen and (max-width: 992px) {
-    height: 300px;
-  } */
 
   @media screen and (max-width: 768px) {
     width: auto;

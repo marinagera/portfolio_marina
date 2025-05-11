@@ -69,7 +69,7 @@ export const MediaContainer = styled.div`
 
   img, video {
     width: 100%;
-    height: 400px;
+    height: 420px;
     object-fit: cover;
     transition: transform 0.7s ease;
 
