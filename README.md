@@ -1,15 +1,15 @@
-# 🌐 Maryna Herasymenko — Personal Portfolio
+# Maryna Herasymenko — Personal Portfolio
 
 Welcome to my personal portfolio website!  
 This is a responsive React-based web app built with **Vite**, **styled-components**, and deployed on **GitHub Pages**.
 
-## ✨ Live Demo
+## Live Demo
 
 🔗 [Visit Portfolio](https://marinagera.github.io/portfolio_marina/)
 
 ---
 
-## 📌 Features
+## Features
 
 - ⚡ Built with [Vite](https://vitejs.dev/) for fast and modern development
 - 🎨 Styled using `styled-components` (CSS-in-JS)
@@ -21,7 +21,7 @@ This is a responsive React-based web app built with **Vite**, **styled-component
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **React**
 - **Vite**
@@ -30,7 +30,7 @@ This is a responsive React-based web app built with **Vite**, **styled-component
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 To run locally:
 
